@@ -1,3 +1,96 @@
 <header class="header">
-  <div class="container">header</div>
+  <div class="header__container container">
+    <div class="header__top">
+      <button class="header__icon-menu icon__menu btn-reset"></button>
+      <div class="header__logo">
+        <a href="#" class="logo">
+          <img src="static/img/logo/logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav class="header__nav nav">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="#" class="nav__link nav__link--active">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Blog
+            </a>
+            <button type="button" class="accordion__btn btn-reset">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#chevron-down-solid"></use>
+              </svg>
+            </button>
+            <div class="nav__sub-menu sub-menu">
+              <ul class="sub-menu__list list-reset">
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Left Sidebar</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Right sidebar</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">No Sidebar</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Blog tag</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Pages
+            </a>
+            <button type="button" class="accordion__btn btn-reset">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#chevron-down-solid"></use>
+              </svg>
+            </button>
+            <div class="nav__sub-menu sub-menu">
+              <ul class="sub-menu__list list-reset">
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">About Us</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Features</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">service</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">FAQs Page</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Gallery</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Elements</a></li>
+                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Page 404</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+        </ul>
+        <button class="header__icon-close icon__close btn-reset">
+        </button>
+      </nav>
+
+      <div class="header__wrap-account">
+        <button type="button" class="header__account-block btn-reset header__btn-account">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#user"></use>
+          </svg>
+          <span class="header__account-label">My Account</span>
+          <span class="header__account-sub">Sign in</span>
+        </button>
+        <ul class="header__account-menu account-menu list-reset">
+          <li class="account-menu__item">
+            <a href="#" class="account-menu__link">My Account</a>
+          </li>
+          <li class="account-menu__item">
+            <a href="#" class="account-menu__link">Checkout</a>
+          </li>
+          <li class="account-menu__item">
+            <a href="#" class="account-menu__link">User Login</a>
+          </li>
+        </ul>
+        <button type="button" class="header__account-block btn-reset header__btn-cart">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+          </svg>
+          <span class="header__account-label">My Cart</span>
+          <div class="header__account-quanitity">
+            <span class="header__account-sub">0</span>
+            <span class="header__account-sub">items</span>
+          </div>
+        </button>
+        <p class="header__account-cart-message">No products in the cart.</p>
+      </div>
+
+    </div>
+    <div class="header__bottom">
+      <div class="header__category">
+        <p class="header__category-name">All Categories</p>
+      </div>
+      <div class="header__search"></div>
+      <div class="header__contact"></div>
+    </div>
+  </div>
 </header>

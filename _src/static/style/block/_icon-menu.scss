@@ -1,0 +1,48 @@
+.icon__menu,
+.icon__close {
+  display: none;
+
+  @media (max-width: $xl) {
+    position: absolute;
+    z-index: 10;
+
+    display: block;
+    width: 32px;
+    height: 29px;
+
+    background-size: 100%;
+    cursor: pointer;
+  }
+}
+
+.icon__menu {
+  @media (max-width: $xl) {
+    top: 52px;
+    left: 0;
+
+    background: url("../img/icon/burger.svg") no-repeat center center;
+    background-size: 14px;
+
+    &--active {
+      display: none;
+    }
+  }
+
+  @media (max-width: $lg) {
+    top: 40px;
+  }
+}
+
+.icon__close {
+  @media (max-width: $xl) {
+    top: 20px;
+    left: 32%;
+
+    background: url("../img/icon/close-svg.svg") no-repeat center center;
+    background-size: 22px;
+  }
+
+  @media (max-width: $md) {
+    left: 210px;
+  }
+}

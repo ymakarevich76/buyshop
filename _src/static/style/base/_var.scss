@@ -1,15 +1,21 @@
 // //////////////////////////////////////// font-family
-$ff-main: "Roboto", sans-serif;
+$ff-main: "Rubik", sans-serif;
 
 // //////////////////////////////////////// font-size
-$fz-main: 16px;
+$fz-main: 14px;
 
-// //////////////////////////////////////// colors 
+// //////////////////////////////////////// colors
 $c-main: #000;
-$c-secondary: gray;
-$c-accent: orange;
+$c-secondary: #808080;
+$c-accent: #ef4060;
 
 // //////////////////////////////////////// breakpoints
+// $sl: 1599.98px;
+// $xl: 1350.98px;
+// $lg: 1200.98px;
+// $md: 1024.98px;
+// $sm: 979.98px;
+
 $sl: 1499.98px;
 $xl: 1199.98px;
 $lg: 991.98px;

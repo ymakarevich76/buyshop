@@ -7,8 +7,62 @@
   padding-right: 30px;
   padding-left: 30px;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sl) {
+    max-width: 1170px;
     padding-right: 15px;
     padding-left: 15px;
   }
+
+  @media (max-width: $xl) {
+    max-width: 960px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  @media (max-width: $lg) {
+    max-width: 720px;
+  }
+
+  @media (max-width: $md) {
+    max-width: 540px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  @media (max-width: $sm) {
+    max-width: 100%;
+  }
 }
+
+// .container {
+//   position: relative;
+
+//   width: 100%;
+//   max-width: 1560px;
+//   margin: 0 auto;
+//   padding-right: 15px;
+//   padding-left: 15px;
+
+//   @media (max-width: $sl) {
+//     max-width: 1300px;
+//   }
+
+//   @media (max-width: $xl) {
+//     max-width: 1200px;
+//   }
+
+//   @media (max-width: $lg) {
+//     max-width: 1170px;
+//   }
+
+//   @media (max-width: $md) {
+//     max-width: 994px;
+//   }
+
+//   @media (max-width: $sm) {
+//     width: auto;
+//     margin: 0 15px !important;
+//     padding-right: 0;
+//     padding-left: 0;
+//   }
+// }
