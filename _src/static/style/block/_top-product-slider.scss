@@ -77,20 +77,3 @@
     text-decoration: line-through;
   }
 }
-
-.top-product-slider__btn-prev,
-.top-product-slider__btn-next {
-  top: -2%;
-
-  width: 25px;
-  height: 25px;
-
-  &:after {
-    font-size: $fz-main;
-    color: #808080;
-  }
-}
-
-.top-product-slider__btn-prev {
-  left: 80%;
-}

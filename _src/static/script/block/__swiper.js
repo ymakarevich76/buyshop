@@ -13,7 +13,7 @@ const promoSlider = new Swiper('.promo-slider', {
   },
 });
 
-const topProductSlider = new Swiper('.top-product-slider', {
+const topProductSlider = new Swiper('.top-product-slider__inner', {
   navigation: {
     nextEl: '.top-product-slider__btn-next',
     prevEl: '.top-product-slider__btn-prev',
