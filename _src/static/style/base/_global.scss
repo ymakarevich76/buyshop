@@ -27,3 +27,34 @@ img {
 
   -webkit-text-fill-color: currentColor;
 }
+
+h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 22px;
+  font-family: $ff-main;
+  color: $c-main;
+  text-transform: capitalize;
+}
+
+h3 {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  font-family: $ff-main;
+  text-align: left;
+  color: $c-main;
+  letter-spacing: 1.2px;
+}

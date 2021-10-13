@@ -1,0 +1,42 @@
+.top-category-slider__img-wrap {
+  position: relative;
+}
+
+.top-category-slider__desc {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+
+  width: 90%;
+  padding: 10px 15px;
+
+  background-color: rgba(255,255,255, .9);
+}
+
+.top-category-slider__title {
+  position: relative;
+
+  display: block;
+  margin: 0;
+  padding: 0 15px;
+
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  color: $c-main;
+  text-transform: capitalize;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    background: url("../img/icon/long-arrow-alt-right-solid.svg") center center no-repeat;
+    transform: translate(0, -50%);
+  }
+}

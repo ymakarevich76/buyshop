@@ -21,3 +21,13 @@ const topProductSlider = new Swiper('.top-product-slider__inner', {
 
   slidesPerView: 1,
 });
+
+const topCategorySlider = new Swiper('.top-category-slider__inner', {
+  navigation: {
+    nextEl: '.top-category-slider__btn-next',
+    prevEl: '.top-category-slider__btn-prev',
+  },
+
+  slidesPerView: 4,
+  spaceBetween: 20,
+});

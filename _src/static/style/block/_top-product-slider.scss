@@ -17,6 +17,10 @@
   &:not(:last-child) {
     border-bottom: 1px solid #e4e4e4;
   }
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .top-product-slider__img-wrap {
@@ -53,6 +57,10 @@
   color: $c-main;
   white-space: nowrap;
   text-overflow: ellipsis;
+
+  .top-product-slider__product:hover & {
+    color: $c-accent;
+  }
 }
 
 .top-product-slider__cost-wrap {
