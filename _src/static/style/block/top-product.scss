@@ -1,0 +1,18 @@
+.top-product {
+  border: 1px solid #ddd;
+}
+
+.top-product__title {
+  margin: 0;
+  padding: 6px 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  font-family: $ff-main;
+  text-align: left;
+  color: $c-main;
+  letter-spacing: 1.2px;
+
+  border-bottom: 1px solid #ddd;
+}
