@@ -3,11 +3,12 @@ body {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 
   font-size: $fz-main;
   font-family: $ff-main;
   color: $c-main;
-  // overflow-x: hidden;
+  letter-spacing: .5px;
 }
 
 .main {

@@ -1,0 +1,82 @@
+.image-slider {
+}
+
+.image-slider__slide {
+  position: relative;
+}
+
+.image-slider__text-wrap {
+  position: absolute;
+  top: 35%;
+  right: 30px;
+}
+
+.image-slider__text {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+  font-family: Rubik;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0;
+
+  &:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+.image-slider__name {
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 20px;
+  font-family: Rubik;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.image-slider__btn {
+  margin: 0;
+  padding: 0 20px;
+
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 31px;
+  font-family: Rubik;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 0;
+
+  background-color: rgb(239, 64, 96);
+
+  transition: .3s;
+
+  &:hover {
+    color: $c-accent;
+
+    background-color: transparent;
+  }
+}
+
+.image-slider .swiper-pagination {
+  // bottom: 20px;
+}
+
+.image-slider .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+
+  background: #e5e5e5;
+  opacity: 1;
+}
+
+.image-slider .swiper-pagination-bullet-active {
+  background: $c-accent;
+}
