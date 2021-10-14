@@ -20,3 +20,46 @@
     }
   }
 }
+
+.content-text {
+  color: #666;
+}
+
+.content-text__desc {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: #666;
+
+  @media (max-width: $md) {
+    font-size: 14px;
+  }
+
+  &:first-child {
+    margin-bottom: 20px;
+
+    @media (max-width: $md) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &--bold {
+    font-weight: 700;
+    color: $c-main;
+  }
+
+  &--accent {
+    margin-top: 38px;
+
+    font-weight: 700;
+    font-size: 18px;
+    color: $c-red;
+
+    @media (max-width: $md) {
+      font-size: 16px;
+    }
+  }
+}

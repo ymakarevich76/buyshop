@@ -1,0 +1,34 @@
+.tabs {
+  padding: 10px 0;
+}
+
+.tabs__box-btn {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tabs__btn {
+  font-size: 16px;
+  font-family: $ff-main;
+  color: #808080;
+  text-transform: capitalize;
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+
+
+  &--active {
+    color: $c-accent;
+  }
+}
+
+.tabs__content {
+  display: none;
+
+  &--active {
+    display: block;
+
+    color: $c-main;
+  }
+}

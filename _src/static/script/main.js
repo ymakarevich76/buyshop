@@ -5,3 +5,4 @@
 @@include('block/__accordion.js')
 @@include('block/__menu-btn.js')
 @@include('block/__swiper.js')
+@@include('block/__tabs.js')

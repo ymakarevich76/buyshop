@@ -11,7 +11,7 @@
 }
 
 .menu-aside__item {
-  padding: 12px 22px;
+  padding: 12px 10px 12px 22px;
 
   &:not(:last-child) {
     border-bottom: 1px solid #f1f1f1;
@@ -31,19 +31,34 @@
   color: $c-main;
   text-transform: capitalize;
 
+  transition: .3s;
+
   &:hover {
     color: $c-accent;
     text-decoration: none;
   }
+
 
   & + * {
     visibility: hidden;
     opacity: 0;
   }
 
-  &--active + * {
+  &:hover + * {
     visibility: visible;
     opacity: 1;
+
+    @media (max-width: $xl) {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  &--active + * {
+    @media (max-width: $xl) {
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
   }
 }
 

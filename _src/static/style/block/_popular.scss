@@ -1,0 +1,15 @@
+.popular {
+}
+
+.popular__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.popular__card-wrap {
+  position: relative;
+
+  width: $c-3;
+}
