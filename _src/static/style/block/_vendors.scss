@@ -1,0 +1,20 @@
+.vendors {
+  display: flex;
+  margin-bottom: 50px;
+  padding: 15px;
+
+  border: 1px solid #ddd;
+}
+
+.vendors__slide {
+  // width: 177px;
+}
+
+.vendors__link {
+  display: flex;
+  justify-content: center;
+}
+
+.vendors__link img {
+  width: 177px;
+}

@@ -13,7 +13,7 @@ const promoSlider = new Swiper('.promo-slider', {
   },
 });
 
-const topProductSlider = new Swiper('.top-product-slider__inner', {
+const topProductSlider = new Swiper('.top-product__slider', {
   navigation: {
     nextEl: '.top-product-slider__btn-next',
     prevEl: '.top-product-slider__btn-prev',
@@ -31,4 +31,113 @@ const topCategorySlider = new Swiper('.top-category-slider__inner', {
   slidesPerView: 4,
   spaceBetween: 20,
   loop: true,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 2
+    },
+    576: {
+      slidesPerView: 3
+    },
+    768: {
+      slidesPerView: 3
+    },
+    992: {
+      slidesPerView: 3
+    },
+    1200: {
+      slidesPerView: 4
+    },
+  }
+});
+
+const reviewsSlider = new Swiper('.reviews-aside__slider', {
+  pagination: {
+    el: '.reviews-aside__pagination',
+    clickable: true,
+  },
+
+  slidesPerView: 1,
+});
+
+const timerSlider = new Swiper('.timer__slider', {
+
+  slidesPerView: 1,
+  // loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+});
+
+const bestSellingSlider = new Swiper('.best-selling__slider', {
+  navigation: {
+    nextEl: '.best-selling__btn-next',
+    prevEl: '.best-selling__btn-prev',
+  },
+
+  slidesPerView: 1,
+});
+
+const newArrivalSlider = new Swiper('.new-arrival__slider', {
+  navigation: {
+    nextEl: '.new-arrival__btn-next',
+    prevEl: '.new-arrival__btn-prev',
+  },
+
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
+  updateOnWindowResize: true,
+
+
+  spaceBetween: 20,
+
+  grid: {
+    rows: 2,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    576: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 2
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3
+    },
+  }
+});
+
+newArrivalSlider.update();
+
+const vendorsSlider = new Swiper('.vendors__slider', {
+  slidesPerView: 7,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 4
+    },
+    576: {
+      slidesPerView: 4
+    },
+    768: {
+      slidesPerView: 4
+    },
+    992: {
+      slidesPerView: 5
+    },
+    1200: {
+      slidesPerView: 7
+    },
+  }
 });

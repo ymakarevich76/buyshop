@@ -2,7 +2,7 @@
 .icon__close {
   display: none;
 
-  @media (max-width: $xl) {
+  @media (max-width: $lg) {
     position: absolute;
     z-index: 10;
 
@@ -16,7 +16,7 @@
 }
 
 .icon__menu {
-  @media (max-width: $xl) {
+  @media (max-width: $lg) {
     top: 52px;
     left: 0;
 
@@ -34,7 +34,7 @@
 }
 
 .icon__close {
-  @media (max-width: $xl) {
+  @media (max-width: $lg) {
     top: 20px;
     left: 32%;
 

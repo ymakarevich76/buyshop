@@ -1,0 +1,83 @@
+.reviews-aside {
+  margin-bottom: 30px;
+  padding: 20px 10px 10px;
+
+  border: 1px solid #ddd;
+}
+
+.reviews-aside__slide {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.reviews-aside__wrap-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.reviews-aside__wrap-title {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+
+    width: 1px;
+    height: 30px;
+
+    background-color: #808080;
+    transform: translate(-50%);
+  }
+}
+
+.reviews-aside__title {
+  display: block;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-accent;
+  text-transform: capitalize;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+}
+
+.reviews-aside__sub-title {
+  margin: 0;
+  padding-bottom: 50px;
+
+  font-weight: 400;
+  font-size: 12px;
+  font-family: $ff-main;
+  text-align: center;
+  color: #838383;
+}
+
+.reviews-aside__text {
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  text-align: center;
+  color: #838383;
+}
+
+.reviews-aside__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
+
+.reviews-aside__pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}

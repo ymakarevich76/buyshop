@@ -6,3 +6,5 @@
 @@include('block/__menu-btn.js')
 @@include('block/__swiper.js')
 @@include('block/__tabs.js')
+@@include('block/__animate.js')
+@@include('block/__countdown.js')

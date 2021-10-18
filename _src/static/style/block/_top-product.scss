@@ -1,7 +1,13 @@
 .top-product {
   position: relative;
 
+  margin-bottom: 30px;
+
   border: 1px solid #ddd;
+}
+
+.top-product__slider-wrapper {
+  padding: 0 15px;
 }
 
 .top-product__title {

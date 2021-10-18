@@ -13,7 +13,7 @@
   align-items: center;
   padding: 27px 0;
 
-  @media (max-width: $xl) {
+  @media (max-width: $lg) {
     justify-content: space-between;
   }
 
@@ -23,7 +23,7 @@
 }
 
 .header__icon-menu {
-  @media (max-width: $xl) {
+  @media (max-width: $lg) {
     position: absolute;
     top: 50%;
     left: 0;
@@ -35,7 +35,7 @@
 .header__logo {
   width: 20%;
 
-  @media (max-width: $xl) {
+  @media (max-width: $lg) {
     width: 30%;
     padding: 13px 0 5px 30px;
   }
@@ -50,7 +50,7 @@
   flex-grow: 1;
   margin-right: auto;
 
-  @media (max-width: $xl) {
+  @media (max-width: $lg) {
     position: fixed;
     top: 0;
     left: 0;
@@ -72,7 +72,7 @@
 .header__nav .nav__link {
   padding: 0 28px 9px;
 
-  @media (max-width: $xl) {
+  @media (max-width: $lg) {
     padding: 0;
   }
 }
@@ -84,7 +84,7 @@
   align-items: flex-end;
   padding-top: 2px;
 
-  @media (max-width: $xl) {
+  @media (max-width: $lg) {
     justify-content: flex-end;
   }
 
@@ -108,7 +108,7 @@
     color: $c-accent;
   }
 
-  @media (max-width: $xl) {
+  @media (max-width: $lg) {
     margin-right: 0;
     padding-left: 0;
   }
@@ -137,7 +137,7 @@
 
   transform: translate(0, -50%);
 
-  @media (max-width: $xl) {
+  @media (max-width: $lg) {
     position: relative;
     top: 15px;
   }
@@ -199,7 +199,7 @@
   border-radius: 4px;
   box-shadow: 2px 2px 11px rgba(0, 0, 0, .1);
 
-  @media (max-width: $xl) {
+  @media (max-width: $lg) {
     right: 0;
   }
 }
@@ -212,13 +212,21 @@
 .header__category {
   width: 20%;
   margin-right: 30px;
+
+  @media (max-width: $xl) {
+    width: 30%;
+  }
+
+  @media (max-width: $md) {
+    display: none;
+  }
 }
 
 .header__category-name {
   position: relative;
 
   margin: 0;
-  padding: 4px 24px 4px 70px;
+  padding: 4px 24px 4px 15px;
 
   font-weight: 500;
   font-size: 15px;
@@ -230,11 +238,15 @@
 
   background-color: rgb(13,39,83);
 
+  @media (max-width: $xl) {
+    padding-left: 15px;
+  }
+
   &::after {
     content: "";
     position: absolute;
     top: 50%;
-    left: 35px;
+    left: 20px;
 
     display: block;
     width: 20px;
@@ -243,6 +255,10 @@
     background: url("../img/icon/menu-category.svg") no-repeat;
     background-size: 100%;
     transform: translate(0, -50%);
+
+    @media (max-width: $xl) {
+      left: 15px;
+    }
   }
 }
 
@@ -255,6 +271,14 @@
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
+
+  @media (max-width: $lg) {
+    width: calc(100% - 30% - 30px);
+  }
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
 }
 
 .header__select-category {
@@ -272,12 +296,24 @@
   &:focus {
     outline: none;
   }
+
+  @media (max-width: $lg) {
+    width: auto;
+  }
+
+  @media (max-width: $md) {
+    display: none;
+  }
 }
 
 .header__search-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $lg) {
+    width: 100%;
+  }
 }
 
 .header__search {
@@ -292,6 +328,14 @@
 
   &:focus {
     outline: none;
+  }
+
+  @media (max-width: $xl) {
+    width: auto;
+  }
+
+  @media (max-width: $lg) {
+    width: 100%;
   }
 }
 
@@ -313,6 +357,10 @@
 
   background: url(../img/icon/call.svg) no-repeat left center;
   background-size: 26px;
+
+  @media (max-width: $lg) {
+    display: none;
+  }
 }
 
 .header__contact-number {

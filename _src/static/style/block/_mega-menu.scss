@@ -8,6 +8,10 @@
   padding: 15px;
 
   border: 1px solid #e4e4e4;
+
+  @media (max-width: $xl) {
+    width: 625px;
+  }
 }
 
 .mega-menu__list {

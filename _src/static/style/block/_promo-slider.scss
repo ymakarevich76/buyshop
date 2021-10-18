@@ -9,6 +9,14 @@
   position: absolute;
   top: 35%;
   right: 30px;
+
+  @media (max-width: $lg) {
+    right: 10px;
+  }
+
+  @media (max-width: $md) {
+    right: 30px;
+  }
 }
 
 .promo-slider__text {
@@ -68,16 +76,4 @@
 .promo-slider__pagination .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 20px;
-}
-
-.promo-slider__pagination .swiper-pagination-bullet {
-  width: 13px;
-  height: 13px;
-
-  background: #e5e5e5;
-  opacity: 1;
-}
-
-.promo-slider__pagination .swiper-pagination-bullet-active {
-  background: $c-accent;
 }

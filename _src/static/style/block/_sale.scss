@@ -1,0 +1,51 @@
+.sale {
+  margin-bottom: 30px;
+}
+
+.sale__wrapper {
+  @media (max-width: $sm) {
+    flex-direction: column;
+  }
+}
+
+.sale__wrapper.row {
+  @media (max-width: $sm) {
+    margin: 0 !important;
+  }
+}
+
+.sale__col {
+  width: $c-6;
+
+  @media (max-width: $sm) {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.sale__text-wrap {
+}
+
+// .sale__name {
+//   font-weight: 500;
+//   font-size: 19px;
+//   line-height: 19px;
+//   color: #fff;
+//   text-transform: capitalize;
+// }
+
+// .sale__text {
+//   font-weight: 400;
+//   font-size: 13px;
+//   line-height: 14px;
+//   color: #999;
+//   text-transform: uppercase;
+// }
+
+// .sale__btn {
+//   font-weight: 400;
+//   font-size: $fz-main;
+//   color: $c-accent;
+//   text-transform: capitalize;
+// }
