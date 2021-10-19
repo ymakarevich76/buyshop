@@ -1,0 +1,33 @@
+.email {
+  position: relative;
+}
+
+.email__link {
+  padding-left: 30px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 26px;
+  font-family: $ff-main;
+  color: #fff;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background: url("../img/icon/email.svg") no-repeat center center;
+    background-size: 20px;
+    transform: translate(0, -50%);
+  }
+}

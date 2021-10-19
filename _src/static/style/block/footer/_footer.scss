@@ -1,2 +1,186 @@
 .footer {
+  padding: 30px 0 20px;
+
+  background-color: rgb(12,39,82);
+}
+
+.footer__title {
+  margin-bottom: 20px;
+}
+
+.footer__top {
+  margin-bottom: 30px !important;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  width: $c-3;
+}
+
+.footer__phone,
+.footer__address {
+  margin-bottom: 10px;
+}
+
+.footer__email {
+  margin-bottom: 20px;
+}
+
+.footer__app {
+  display: flex;
+}
+
+.footer__app-link {
+  display: inline-block;
+  width: 113px;
+  height: 41px;
+  margin-right: 10px;
+}
+
+.footer__nav {
+  width: $c-3;
+}
+
+
+.footer__nav-list {
+}
+
+.footer__nav-item {
+  margin-bottom: 10px;
+}
+
+.footer__nav-link {
+  font-weight: 400;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: #fff;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+}
+
+.footer__btn {
+  display: none;
+
+  @media (max-width: $md) {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 6px;
+
+      width: 20px;
+      height: 20px;
+
+      background: url("../img/icon/footer-down_arrow.png") no-repeat center center;
+      background-size: 100%;
+
+      transition: .2s;
+    }
+
+    &--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.footer__btn + * {
+  @media (max-width: $md) {
+    display: none;
+  }
+}
+
+.footer__btn--active + * {
+  @media (max-width: $md) {
+    display: block;
+    padding-bottom: 16px;
+  }
+}
+
+
+.footer__middle {
+  display: flex;
+  margin-bottom: 30px;
+  padding: 20px;
+
+  background-color: #fff;
+}
+
+.footer__social {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+.footer__form {
+  display: flex;
+  width: 60%;
+}
+
+.footer__form-title {
+  width: 35%;
+  margin: 0;
+  margin-right: 15px;
+
+  font-size: 22px;
+  color: $c-main;
+  text-transform: capitalize;
+}
+
+.footer__form-wrap-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 35%);
+}
+
+.footer__form-email {
+  flex-grow: 1;
+  height: 42px;
+  padding: 10px;
+
+  background: #f5f5f5;
+  border: 1px solid #ededed;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    font-family: $ff-main;
+    color: rgba(108, 117, 125, .6);
+  }
+
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, .3);
+    outline: none;
+  }
+}
+
+.footer__form-btn {
+  width: 105px;
+  height: 42px;
+  padding: 12px 12px 10px;
+
+  font-weight: 400;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+
+  background-color: #ef4060;
+  border: none;
+
+  &:hover {
+    background-color: rgba(0,0,0,1);
+  }
 }

@@ -8,3 +8,4 @@
 @@include('block/__tabs.js')
 @@include('block/__animate.js')
 @@include('block/__countdown.js')
+@@include('block/__footer-tabs.js')

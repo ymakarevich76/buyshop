@@ -84,17 +84,8 @@ const newArrivalSlider = new Swiper('.new-arrival__slider', {
     prevEl: '.new-arrival__btn-prev',
   },
 
-  observer: true,
-  observeParents: true,
-  observeSlideChildren: true,
-  updateOnWindowResize: true,
-
-
   spaceBetween: 20,
 
-  grid: {
-    rows: 2,
-  },
   breakpoints: {
     320: {
       slidesPerView: 1
@@ -114,7 +105,34 @@ const newArrivalSlider = new Swiper('.new-arrival__slider', {
   }
 });
 
-newArrivalSlider.update();
+const newsSlider = new Swiper('.news__slider', {
+  navigation: {
+    nextEl: '.news__btn-next',
+    prevEl: '.news__btn-prev',
+  },
+
+  spaceBetween: 20,
+
+  loop: true,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    576: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 2
+    },
+    992: {
+      slidesPerView: 3
+    },
+    1200: {
+      slidesPerView: 2
+    },
+  }
+});
 
 const vendorsSlider = new Swiper('.vendors__slider', {
   slidesPerView: 7,

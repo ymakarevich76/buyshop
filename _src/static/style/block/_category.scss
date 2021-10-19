@@ -1,4 +1,38 @@
 .category {
   margin-bottom: 30px;
+
+  @media (max-width: $lg) {
+    display: none;
+  }
 }
 
+.category__title {
+  margin-bottom: 20px;
+}
+
+.category__wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.category__card {
+  border: 1px solid #e4e4e4;
+}
+
+.category__card-container {
+  display: flex;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
+}
+
+.category__card {
+  width: $c-6;
+
+  @media (max-width: $lg) {
+    width: $c-12;
+    margin-bottom: 10px;
+  }
+}
