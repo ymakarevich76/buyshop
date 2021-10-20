@@ -15,8 +15,8 @@ const promoSlider = new Swiper('.promo-slider', {
 
 const topProductSlider = new Swiper('.top-product__slider', {
   navigation: {
-    nextEl: '.top-product-slider__btn-next',
-    prevEl: '.top-product-slider__btn-prev',
+    nextEl: '.top-product__btn-next',
+    prevEl: '.top-product__btn-prev',
   },
 
   slidesPerView: 1,

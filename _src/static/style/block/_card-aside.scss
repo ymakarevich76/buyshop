@@ -1,7 +1,7 @@
 .card-aside {
   display: flex;
   width: 234px;
-  padding: 10px 0;
+  padding: 10px 0 10px 10px;
 
   &:not(:last-child) {
     border-bottom: 1px solid #e4e4e4;
@@ -37,6 +37,7 @@
 }
 
 .card-aside__title {
+  width: 105px;
   margin-bottom: 10px;
   overflow: hidden;
 
