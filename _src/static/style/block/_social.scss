@@ -24,6 +24,11 @@
   &:hover svg {
     fill: #fff;
   }
+
+  @media (max-width: $lg) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .social__link svg {

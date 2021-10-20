@@ -143,10 +143,10 @@ const vendorsSlider = new Swiper('.vendors__slider', {
 
   breakpoints: {
     320: {
-      slidesPerView: 4
+      slidesPerView: 2
     },
     576: {
-      slidesPerView: 4
+      slidesPerView: 3
     },
     768: {
       slidesPerView: 4
