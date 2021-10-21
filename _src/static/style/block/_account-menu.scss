@@ -17,6 +17,10 @@
   @media (max-width: $xl) {
     right: 60px;
   }
+
+  @media (max-width: $md) {
+    top: 35px;
+  }
 }
 
 .account-menu__item {

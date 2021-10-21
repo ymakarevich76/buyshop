@@ -67,6 +67,17 @@ const timerSlider = new Swiper('.timer__slider', {
   autoplay: {
     delay: 3000,
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    576: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 1
+    },
+  }
 });
 
 const bestSellingSlider = new Swiper('.best-selling__slider', {

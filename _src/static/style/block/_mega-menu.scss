@@ -13,6 +13,10 @@
   @media (max-width: $xl) {
     width: 625px;
   }
+
+  @media (max-width: $lg) {
+    width: 518px;
+  }
 }
 
 .mega-menu__list {
@@ -24,7 +28,7 @@
   width: 25%;
 }
 
-.mega-menu__link {
+.mega-menu__title {
   display: inline-block;
   margin-bottom: 20px;
 
@@ -54,4 +58,11 @@
   line-height: 1.5;
   font-family: $ff-main;
   color: $c-main;
+
+  transition: .3s;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
 }

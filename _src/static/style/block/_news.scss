@@ -74,6 +74,8 @@
   background-color: $c-main;
   border: 2px solid $c-accent;
   border-radius: 50%;
+
+  transition: .3s;
   &:first-child {
     margin-right: 10px;
   }
@@ -182,6 +184,11 @@
     background: url("../img/icon/comments-solid.svg") no-repeat;
     background-size: 17px;
     transform: translate(0, -50%);
+  }
+
+  &:hover {
+    color: #8b8b8b;
+    text-decoration: none;
   }
 }
 

@@ -1,5 +1,10 @@
 .banner-aside {
   margin-bottom: 30px;
+
+  @media (max-width: $md) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .banner-aside__img {

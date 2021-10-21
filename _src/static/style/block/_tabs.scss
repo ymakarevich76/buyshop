@@ -13,12 +13,15 @@
   color: #808080;
   text-transform: capitalize;
 
+  transition: .3s;
+
   &:not(:last-child) {
     margin-right: 40px;
   }
 
 
-  &--active {
+  &--active,
+  &:hover {
     color: $c-accent;
   }
 }

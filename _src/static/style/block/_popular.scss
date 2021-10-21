@@ -12,7 +12,7 @@
   }
 }
 .popular__title {
-  width: 75%;
+  width: 70%;
 
   @media (max-width: $sm) {
     width: 100%;
@@ -22,9 +22,13 @@
 
 .popular__tabs {
   justify-content: flex-end;
-  width: 25%;
+  width: 30%;
 
   border-bottom: 1px solid #ddd;
+
+  @media (max-width: $xl) {
+    width: auto;
+  }
 
   @media (max-width: $sm) {
     justify-content: center;
@@ -42,17 +46,13 @@
   }
 }
 
-.popular__card-container {
-  @media (max-width: $sm) {
-    margin: 0 !important;
-  }
-}
-
-.popular__card-wrap {
+.popular__card {
   position: relative;
 
   width: $c-3;
   margin-bottom: 20px;
+
+  border: 1px solid #e4e4e4;
 
   @media (max-width: $xl) {
     width: $c-4;
@@ -67,11 +67,6 @@
   }
 
   @media (max-width: $sm) {
-    width: 100%;
-    margin: 0 0 20px;
+    width: $c-12;
   }
-}
-
-.popular__card {
-  border: 1px solid #e4e4e4;
 }

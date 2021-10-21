@@ -1,5 +1,9 @@
 .main-box {
   display: flex;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
 }
 
 .main-box__sidebar {
@@ -10,7 +14,7 @@
   }
 
   @media (max-width: $md) {
-    display: none;
+    width: 100%;
   }
 }
 

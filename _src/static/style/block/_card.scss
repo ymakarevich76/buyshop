@@ -40,6 +40,10 @@
   letter-spacing: 1.2px;
 }
 
+.card__wrap-img {
+  display: flex;
+  justify-content: center;
+}
 
 .card__hover {
   position: absolute;
@@ -78,6 +82,8 @@
   background-color: #fff;
   border: 1px solid #f5f5f5;
   border-radius: 5px;
+
+  transition: .3s;
 
   &:not(:last-child) {
     margin-right: 10px;

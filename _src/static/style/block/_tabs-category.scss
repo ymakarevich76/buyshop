@@ -23,7 +23,10 @@
 
   border-bottom: 1px solid #ece5e5;
 
-  &--active {
+  transition: .3s;
+
+  &--active,
+  &:hover {
     position: relative;
 
     padding-left: 20px;

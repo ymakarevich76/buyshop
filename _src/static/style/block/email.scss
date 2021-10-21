@@ -11,6 +11,8 @@
   font-family: $ff-main;
   color: #fff;
 
+  transition: .3s;
+
   &:hover {
     color: $c-accent;
     text-decoration: none;
