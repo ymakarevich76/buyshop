@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   padding: 0 10px;
+  overflow: hidden;
 
   cursor: pointer;
 
@@ -13,11 +14,6 @@
 
   &:hover .card__title {
     color: $c-accent;
-  }
-
-  &:hover .card__hover {
-    visibility: visible;
-    opacity: 1;
   }
 }
 
@@ -54,10 +50,15 @@
   transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0;
+  transition: .3s;
+
+  .card:hover & {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .card__hover-wrap-img {
-  transition: .3s;
 }
 
 .card__links {
@@ -100,6 +101,7 @@
 
 .card__content {
   padding: 5px 0;
+  pointer-events: none;
 }
 
 .card__rating {
