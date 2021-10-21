@@ -18,9 +18,8 @@ if (document.querySelector('.card__hover-wrap-img')) {
   })
 }
 
-
-if (document.querySelector('.new-arrival__hover-wrap-img')) {
-  const imgs = document.querySelectorAll('.new-arrival__hover-wrap-img');
+if (document.querySelector('.new-arrival__hover-img-wrap')) {
+  const imgs = document.querySelectorAll('.new-arrival__hover-img-wrap');
   const cards = document.querySelectorAll('.new-arrival__card');
 
   cards.forEach((card, index) => {

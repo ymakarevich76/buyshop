@@ -29,16 +29,12 @@
   display: flex;
   margin-bottom: 20px;
   padding: 10px 5px;
+  overflow: hidden;
 
   border: 1px solid #e4e4e4;
 
   &:hover {
     text-decoration: none;
-  }
-
-  &:hover .new-arrival__hover-img-wrap {
-    visibility: visible;
-    opacity: 1;
   }
 }
 
@@ -58,6 +54,14 @@
   transform: translate(1px, 1px);
   visibility: hidden;
   opacity: 0;
+
+  transition: .3s;
+
+
+  .new-arrival__card:hover & {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .new-arrival__content {

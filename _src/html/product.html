@@ -1,0 +1,45 @@
+@@include('block/head.html')
+
+@@include('block/header/header.html', {"class": "header__category--none"})
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <div class="container">
+    @@include('block/breadcrumb.html')
+
+    <div class="product">
+      <div class="product__slider swiper">
+        <div class="product__slider-wrapper swiper-wrapper">
+          <div class="product__slider-slide swiper-slide">
+            <img src="static/img/card/2-1-large.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="product__mini-slider swiper">
+        <div class="product__mini-slider-wrapper swiper-wrapper">
+          <div class="product__mini-slider-slide swiper-slide">
+            <div class="product__wrap-img swiper-zoom-container">
+              <img src="static/img/card/2-1.jpg" alt="">
+            </div>
+          </div>
+          <div class="product__mini-slider-slide swiper-slide">
+            <img src="static/img/card/6.jpg" alt="">
+          </div>
+          <div class="product__mini-slider-slide swiper-slide">
+            <img src="static/img/card/6-1.jpg" alt="">
+          </div>
+          <div class="product__mini-slider-slide swiper-slide">
+            <img src="static/img/card/2.jpg" alt="">
+          </div>
+          <div class="product__mini-slider-slide swiper-slide">
+            <img src="static/img/card/7.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

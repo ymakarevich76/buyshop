@@ -18,7 +18,7 @@
 
 @import "block/header/header";
 @import "block/logo";
-// @import "block/breadcrumb";
+@import "block/breadcrumb";
 @import "block/title/title";
 
 // @import "block/form/form";
@@ -62,6 +62,10 @@
 @import "block/email";
 @import "block/address";
 @import "block/social";
+@import "block/tags";
+@import "block/contact-us";
+@import "block/drop-us";
+@import "block/map";
 
 @import "block/rating";
 

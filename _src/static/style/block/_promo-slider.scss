@@ -82,21 +82,9 @@
 }
 
 .promo-slider__btn {
-  margin: 0;
   padding: 0 20px;
 
-  font-weight: 500;
-  font-size: 11px;
   line-height: 31px;
-  font-family: Rubik;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  letter-spacing: 0;
-
-  background-color: rgb(239, 64, 96);
-
-  transition: .3s;
-
   &:hover {
     color: $c-accent;
 
@@ -104,7 +92,10 @@
   }
 
   @media (max-width: $md) {
-    font-size: 9px;
+    padding: 0 18px;
+
+    font-size: 10px;
+    line-height: 28px;
   }
 }
 

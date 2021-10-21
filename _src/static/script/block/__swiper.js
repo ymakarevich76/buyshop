@@ -170,3 +170,21 @@ const vendorsSlider = new Swiper('.vendors__slider', {
     },
   }
 });
+
+const productSlider = new Swiper('.product__slider', {
+  slidesPerView: 1,
+
+  zoom: {
+    maxRatio: 5,
+    minRatio: 1,
+  },
+
+  thumbs: {
+    swiper: {
+      el: ".product__mini-slider",
+      slidesPerView: 5,
+    }
+  }
+
+
+});

@@ -1,12 +1,53 @@
 .menu-aside {
   position: relative;
 
+  margin-top: -45px;
   margin-bottom: 30px;
 
   border: 1px solid #e4e4e4;
 
   @media (max-width: $md) {
     display: none;
+  }
+}
+
+.menu-aside__name {
+  position: relative;
+
+  margin: 0;
+  padding: 4px 24px 4px 15px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+
+  background-color: rgb(13,39,83);
+
+  @media (max-width: $xl) {
+    padding-left: 15px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background: url("../img/icon/menu-category.svg") no-repeat;
+    background-size: 100%;
+    transform: translate(0, -50%);
+
+    @media (max-width: $xl) {
+      left: 15px;
+    }
   }
 }
 

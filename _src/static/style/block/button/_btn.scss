@@ -1,4 +1,27 @@
-.btn {
+.btn-1 {
+  margin: 0;
+  padding: 10px;
+
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 20px;
+  font-family: $ff-main;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0;
+
+  background-color: rgb(239, 64, 96);
+
+  transition: .3s;
+
+  &:hover {
+    color: #fff;
+
+    background-color: rgba(0,0,0,1);
+  }
+}
+
+.btn-2 {
   display: inline-block;
   padding: 5px 25px;
 
@@ -18,7 +41,6 @@
     background-color: $c-accent;
   }
 }
-
 
 .btn-box {
   position: absolute;

@@ -1,0 +1,36 @@
+.tags {
+  border: 1px solid #ddd;
+
+  @media (max-width: $md) {
+    margin-bottom: 35px;
+  }
+}
+
+.tags__title {
+  padding: 6px 10px;
+
+  text-transform: capitalize;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.tags__box {
+  padding: 10px;
+}
+
+.tags__link {
+  display: inline-block;
+  margin: 4px 2px 4px 0;
+  padding: 4px 7px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.2;
+  font-family: "OpenSans";
+  color: #333;
+  text-transform: capitalize;
+
+  background: #f5f5f5;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}

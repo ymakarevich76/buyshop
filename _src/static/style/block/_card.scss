@@ -54,6 +54,7 @@
   transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0;
+
   transition: .3s;
 
   .card:hover & {
@@ -63,14 +64,19 @@
 }
 
 .card__hover-wrap-img {
+  @media (max-width: $md) {
+    display: none;
+  }
 }
 
 .card__links {
   position: absolute;
   bottom: 50%;
-  left: 40px;
+  left: 50%;
 
   display: flex;
+
+  transform: translate(-50%, 0);
 }
 
 .card__link {
@@ -98,6 +104,11 @@
   &:hover svg {
     fill: #fff;
   }
+
+  @media (max-width: $md) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .card__links svg {
@@ -107,6 +118,7 @@
 
 .card__content {
   padding: 5px 0;
+
   pointer-events: none;
 }
 

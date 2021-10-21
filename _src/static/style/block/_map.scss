@@ -1,0 +1,11 @@
+.map {
+  margin-bottom: 30px;
+
+  @media (max-width: $md) {
+    margin-bottom: 15px;
+  }
+}
+
+.map iframe {
+  width: 100%;
+}
