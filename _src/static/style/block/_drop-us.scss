@@ -8,11 +8,6 @@
   text-align: center;
 }
 
-.drop-us__form {
-  display: flex;
-  flex-direction: column;
-}
-
 .drop-us__text {
   margin-bottom: 25px;
 
@@ -36,36 +31,6 @@
     }
   }
 }
-
-.drop-us__box-input {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.drop-us__label {
-  font-weight: 400;
-  font-size: $fz-main;
-  font-family: $ff-main;
-  color: $c-secondary;
-}
-
-.drop-us__input {
-  padding: 12px;
-
-  font-size: 12px;
-  line-height: 20px;
-  color: #000;
-
-  background: #fafafa;
-  border: 1px solid #ededed;
-
-  &:focus {
-    border: 1px solid rgba(0, 0, 0, .3);
-    outline: none;
-  }
-}
-
 
 .drop-us__btn {
   max-width: 82px;
