@@ -44,3 +44,27 @@ if (document.querySelector('.tabs-category__btn')) {
     })
   });
 }
+
+
+if (document.querySelector('.tabs-product__btn')) {
+  const tabs = document.querySelectorAll('.tabs-product__btn');
+  const tabsContent = document.querySelectorAll('.tabs-product__content');
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', (evt) => {
+
+      tabs.forEach((tab) => {
+        tab.classList.remove('tabs-product__btn--active');
+      });
+
+      evt.currentTarget.classList.add('tabs-product__btn--active');
+
+      tabsContent.forEach((tabContent) => {
+        tabContent.classList.remove('tabs-product__content--active')
+      });
+
+      tabsContent[index].classList.add('tabs-product__content--active');
+
+    })
+  });
+}

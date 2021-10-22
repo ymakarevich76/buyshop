@@ -1,65 +1,9 @@
 .rating {
-  position: relative;
-
-  display: inline-block;
-
-  font-size: 18px;
-
-  &::before {
-    content: "★★★★★";
-
-    display: block;
-  }
-}
-
-.rating__items {
-  position: absolute;
-  top: 0;
-  left: 0;
-
   display: flex;
-  flex-direction: row-reverse;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  // margin-bottom: 10px;
 }
 
-.rating__item {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 0;
-  height: 0;
-
-  visibility: hidden;
-  opacity: 0;
-
-  &:checked,
-  &:checked ~ .rating__label {
-    color: #f5ba3a;
-  }
-}
-
-.rating__label {
-  flex: 0 0 20%;
-  height: 100%;
-
-  color: #fff;
-
-  cursor: pointer;
-
-  &::before {
-    content: "★";
-
-    display: block;
-
-    transition: color .3s ease 0s;
-  }
-
-  &:hover,
-  &:hover ~ .rating__label,
-  &:checked ~ &:hover {
-    color: #fcae02;
-  }
+.rating img {
+  width: 12px;
+  height: 17px;
 }

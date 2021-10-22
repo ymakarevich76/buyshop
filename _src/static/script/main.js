@@ -10,3 +10,4 @@
 @@include('block/__countdown.js')
 @@include('block/__footer-tabs.js')
 @@include('block/__dynamicAdapt.js')
+@@include('block/__product-add-cart.js')

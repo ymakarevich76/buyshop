@@ -6,3 +6,12 @@ if (document.querySelector('.accordion__btn')) {
     })
   });
 }
+
+if (document.querySelector('.product__accordion__btn')) {
+  const accordionBtns = document.querySelectorAll('.product__accordion__btn');
+  accordionBtns.forEach((btn, index) => {
+    btn.addEventListener('click', (evt) => {
+      evt.currentTarget.classList.toggle('product__accordion__btn--active');
+    })
+  });
+}

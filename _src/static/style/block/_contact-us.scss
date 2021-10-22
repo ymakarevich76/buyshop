@@ -69,7 +69,7 @@
   line-height: 26px;
   font-family: $ff-main;
   text-align: center;
-  color: #808080;
+  color: $c-secondary;
 
   .contact-us__box:not(:first-child) &:hover {
     color: $c-accent;

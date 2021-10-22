@@ -182,7 +182,8 @@ const productSlider = new Swiper('.product__slider', {
   thumbs: {
     swiper: {
       el: ".product__mini-slider",
-      slidesPerView: 5,
+      slidesPerView: 4,
+      // loop: true,
     }
   }
 

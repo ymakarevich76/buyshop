@@ -1,5 +1,15 @@
 // ////////////////////////////////////////// Rubik
 @font-face {
+  font-weight: 300;
+  font-family: Rubik;
+  font-style: normal;
+
+  font-display: swap;
+  src: url(../font/Rubik/Rubik-Light.woff2),
+  url(../font/Rubik/Rubik-Light.woff);
+}
+
+@font-face {
   font-weight: 400;
   font-family: Rubik;
   font-style: normal;

@@ -1,0 +1,58 @@
+.desc-text {
+}
+
+.desc-text__desc {
+  margin: 10px 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 2;
+  font-family: $ff-main;
+  color: $c-secondary;
+}
+
+.desc-text__name {
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 2;
+  font-family: $ff-main;
+  color: $c-main;
+}
+
+.desc-text__list {
+  padding-left: 15px;
+}
+
+.desc-text__table {
+  border: 1px solid #ededed;
+}
+
+.desc-text__table-row {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+.desc-text__table-name {
+  width: 150px;
+  margin: 0;
+
+  font-weight: 500;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: #000;
+}
+
+.desc-text__table-text {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: $c-secondary;
+}

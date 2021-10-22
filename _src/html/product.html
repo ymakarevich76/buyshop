@@ -1,44 +1,312 @@
 @@include('block/head.html')
 
-@@include('block/header/header.html', {"class": "header__category--none"})
+@@include('block/header/header.html', {"class": "header__category--none",
+"background": "header--product"})
 <main class="main">
   <!-- //////////////////////////////////////////////////////////  -->
   <div class="container">
     @@include('block/breadcrumb.html')
 
     <div class="product">
-      <div class="product__slider swiper">
-        <div class="product__slider-wrapper swiper-wrapper">
-          <div class="product__slider-slide swiper-slide">
-            <img src="static/img/card/2-1-large.jpg" alt="">
-          </div>
-        </div>
-      </div>
+      <div class="product__wrap-top">
+        <div class="product__image">
+          <div class="product__slider swiper">
+            <div class="product__slider-wrapper swiper-wrapper">
+              <div class="product__slider-slide swiper-slide">
+                <div class="product__wrap-img  swiper-zoom-container">
+                  <img src="static/img/card/2-1-large.jpg" alt="Ambrane Power Bank (PP-20)">
+                </div>
+              </div>
 
+              <div class="product__slider-slide swiper-slide">
+                <div class="product__wrap-img  swiper-zoom-container">
+                  <img src="static/img/card/6-large.jpg" alt="Acer Predator Gaming Laptop">
+                </div>
+              </div>
 
-      <div class="product__mini-slider swiper">
-        <div class="product__mini-slider-wrapper swiper-wrapper">
-          <div class="product__mini-slider-slide swiper-slide">
-            <div class="product__wrap-img swiper-zoom-container">
-              <img src="static/img/card/2-1.jpg" alt="">
+              <div class="product__slider-slide swiper-slide">
+                <div class="product__wrap-img  swiper-zoom-container">
+                  <img src="static/img/card/6-1-large.jpg" alt="Acer Predator Gaming Laptop">
+                </div>
+              </div>
+
+              <div class="product__slider-slide swiper-slide">
+                <div class="product__wrap-img  swiper-zoom-container">
+                  <img src="static/img/card/2-large.jpg" alt="Ambrane Power Bank (PP-20)">
+                </div>
+              </div>
+
+              <div class="product__slider-slide swiper-slide">
+                <div class="product__wrap-img  swiper-zoom-container">
+                  <img src="static/img/card/7-1-large.jpg" alt="Date Unique New Analog Watch – For Men">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="product__mini-slider-slide swiper-slide">
-            <img src="static/img/card/6.jpg" alt="">
+
+          <div class="product__mini-slider swiper">
+            <div class="product__mini-slider-wrapper swiper-wrapper">
+              <div class="product__mini-slider-slide swiper-slide">
+                <div class="product__wrap-img-mini">
+                  <img src="static/img/card/2-1.jpg" alt="Ambrane Power Bank (PP-20)">
+                </div>
+              </div>
+              <div class="product__mini-slider-slide swiper-slide">
+                <div class="product__wrap-img-mini">
+                  <img src="static/img/card/6.jpg" alt="Acer Predator Gaming Laptop">
+                </div>
+              </div>
+              <div class="product__mini-slider-slide swiper-slide">
+                <div class="product__wrap-img-mini">
+                  <img src="static/img/card/6-1.jpg" alt="Acer Predator Gaming Laptop">
+                </div>
+              </div>
+              <div class="product__mini-slider-slide swiper-slide">
+                <div class="product__wrap-img-mini">
+                  <img src="static/img/card/2.jpg" alt="Ambrane Power Bank (PP-20)">
+                </div>
+              </div>
+              <div class="product__mini-slider-slide swiper-slide">
+                <div class="product__wrap-img-mini">
+                  <img src="static/img/card/7.jpg" alt="Date Unique New Analog Watch – For Men">
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="product__mini-slider-slide swiper-slide">
-            <img src="static/img/card/6-1.jpg" alt="">
+        </div>
+
+        <div class="product__desc">
+          <h1 class="product__title">Acer Predator Gaming Laptop</h1>
+          <div class="product__cost-box">
+            <p class="product__cost product__cost--old">$45.00</p>
+            <p class="product__cost">$40.00</p>
           </div>
-          <div class="product__mini-slider-slide swiper-slide">
-            <img src="static/img/card/2.jpg" alt="">
+          <p class="product__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.
+          </p>
+          <p class="product__stock">
+            <span class="product__stock-value">10</span>
+            in stock
+          </p>
+          <form action="" class="product__form">
+            <div class="product__quantity">
+              <span class="product__quantity-text">Qty: </span>
+
+              <input type="button" value="-" class="product__quantity-btn minus btn-reset">
+
+              <input type="text" step="1" min="1" max="998" name="quantity" value="1" title="Qty"
+                class="product__quantity-value" size="4" pattern="[0-9]*" inputmode="numeric"
+                aria-labelledby="Acer Predator Gaming Laptop quantity" readonly>
+
+              <input type="button" value="+" class="product__quantity-btn plus btn-reset">
+            </div>
+            <button type="submit" class="product__btn-add-cart btn-1 btn-reset ">Add to cart</button>
+          </form>
+
+          <div class="product__box-like-compare">
+            <div class="product__box-like">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+              </svg>
+              <a href="" class="product__box-link">Add to wishlist</a>
+            </div>
+            <div class="product__box-compare">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#clone"></use>
+              </svg>
+              <a href="" class="product__box-link">Compare</a>
+            </div>
           </div>
-          <div class="product__mini-slider-slide swiper-slide">
-            <img src="static/img/card/7.jpg" alt="">
+
+          <div class="product__meta">
+            <div class="product__meta-box">
+              <span class="product__meta-name">SKU: </span>
+              <span class="product__meta-text">NHFL5-15-1</span>
+            </div>
+            <div class="product__meta-box">
+              <span class="product__meta-name">Categories: </span>
+              <a href="" class="product__meta-link">Cryotronics,</a>
+              <a href="" class="product__meta-link">Hydraulic,</a>
+              <a href="" class="product__meta-link">induction,</a>
+              <a href="" class="product__meta-link">Integrated,</a>
+              <a href="" class="product__meta-link">lamp,</a>
+              <a href="" class="product__meta-link">mega,</a>
+              <a href="" class="product__meta-link">Night Lamps,</a>
+              <a href="" class="product__meta-link">Pro Electron,</a>
+              <a href="" class="product__meta-link">radio</a>
+            </div>
+            <div class="product__meta-box">
+              <span class="product__meta-name">Tags: </span>
+              <a href="" class="product__meta-link">Bioelectronics,</a>
+              <a href="" class="product__meta-link">Integrated</a>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="product__wrap-bottom">
+        <div class="product__tabs tabs-product">
+          <div class="tabs-product__box-btn">
+            <button class="tabs-product__btn tabs-product__btn--active btn-reset">
+              <span data-da=".accordion-product__btn--1,767, first" class="btn-text btn-text--1">Description</span>
+            </button>
+            <button class="tabs-product__btn btn-reset">
+              <span data-da=".accordion-product__btn--2,767, first" class="btn-text btn-text--2">Additional
+                information</span>
+            </button>
+            <button class="tabs-product__btn btn-reset">
+              <span data-da=".accordion-product__btn--3,767, first" class="btn-text btn-text--3">Reviews (1)</span>
+            </button>
+          </div>
+          <!--/tabs-product__box-btn-->
+
+          <div class="tabs-product__box-content">
+            <div class="tabs-product__content tabs-product__content--active">
+              <div data-da=".accordion-product__content--1,767, first" class="desc-text desc-text--1">
+                <span class="desc-text__name">Paragraph text</span>
+                <p class="desc-text__desc">
+                  Nam tristique porta ligula, vel viverra sem eleifend nec. Nulla sed purus augue, eu euismod tellus.
+                  Nam mattis eros nec mi sagittis sagittis. Vestibulum suscipit cursus bibendum. Integer at justo eget
+                  sem auctor auctor eget vitae arcu. Nam tempor malesuada porttitor. Nulla quis dignissim ipsum. Aliquam
+                  pulvinar iaculis justo, sit amet interdum sem hendrerit vitae. Vivamus vel erat tortor. Nulla
+                  facilisi. In nulla quam, lacinia eu aliquam ac, aliquam in nisl.
+                </p>
+
+                <span class="desc-text__name">Unordered list</span>
+                <ul class="desc-text__list">
+                  <li class="desc-text__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                  <li class="desc-text__desc">Maecenas ullamcorper est et massa mattis condimentum.</li>
+                  <li class="desc-text__desc">Vestibulum sed massa vel ipsum imperdiet malesuada id tempus nisl.</li>
+                  <li class="desc-text__desc">Etiam nec massa et lectus faucibus ornare congue in nunc.</li>
+                  <li class="desc-text__desc">Mauris eget diam magna, in blandit turpis.</li>
+                </ul>
+
+                <span class="desc-text__name">Ordered list</span>
+                <ol class="desc-text__list">
+                  <li class="desc-text__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                  <li class="desc-text__desc">Maecenas ullamcorper est et massa mattis condimentum.</li>
+                  <li class="desc-text__desc">Vestibulum sed massa vel ipsum imperdiet malesuada id tempus nisl.</li>
+                  <li class="desc-text__desc">Etiam nec massa et lectus faucibus ornare congue in nunc.</li>
+                  <li class="desc-text__desc">Mauris eget diam magna, in blandit turpis.</li>
+                </ol>
+
+                <p class="desc-text__desc">In cursus faucibus tortor eu vestibulum. Ut eget turpis ac justo porta
+                  varius. Donec vel felis ante, ac vehicula ipsum. Quisque sed diam metus. Quisque eget leo sit amet
+                  erat varius rutrum vitae dapibus lectus. Vivamus et sapien ante. Suspendisse potenti. Fusce in tellus
+                  est, ac consequat lacus. Nulla risus massa, commodo in imperdiet ut, ornare in leo. Duis pellentesque
+                  sagittis lorem, sed mollis lorem venenatis id.</p>
+              </div>
+            </div>
+            <div class="tabs-product__content">
+              <div data-da=".accordion-product__content--2,767, first" class="desc-text desc-text--2">
+                <div class="desc-text__table">
+                  <div class="desc-text__table-row">
+                    <p class="desc-text__table-name">Weight</p>
+                    <p class="desc-text__table-text">15 kg</p>
+                  </div>
+                  <div class="desc-text__table-row">
+                    <p class="desc-text__table-name">Dimensions</p>
+                    <p class="desc-text__table-text">124 × 451 × 215 cm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-product__content">
+              <div data-da=".accordion-product__content--3,767, first" class="desc-text desc-text--3">
+                <div class="desc-text__reviews reviews">
+                  <p class="reviews__title">
+                    <span class="reviews__title reviews__title--bold">
+                      1 review for
+                    </span>
+                    Microsoft Surface Go Magnetic Tablet Keyboard
+                  </p>
+                  <div class="reviews__contain">
+                    <div class="reviews__wrap-img">
+                      <img src="static/img/icon/user.png" alt="User">
+                    </div>
+                    <div class="reviews__comment">
+                      <div class="reviews__comment-top">
+                        <div class="reviews__rating rating">
+                          <img src="static/img/icon/star.svg" alt="Star">
+                          <img src="static/img/icon/star.svg" alt="Star">
+                          <img src="static/img/icon/star.svg" alt="Star">
+                          <img src="static/img/icon/star-empty.svg" alt="Star">
+                          <img src="static/img/icon/star-empty.svg" alt="Star">
+                        </div>
+                        <div class="reviews__meta">
+                          <p class="reviews__meta-author">admin</p>
+                          <span class="reviews__meta-dash">–</span>
+                          <time class="reviews__meta-date" datetime="2019-04-01T06:37:38+00:00">April 1, 2019</time>
+                        </div>
+                      </div>
+                      <p class="reviews__comment-text">
+                        empor incididunt ut labore et dolore magna
+                      </p>
+                    </div>
+                    <!--/reviews-comment-->
+                  </div>
+                  <!--/reviews__contain-->
+                  <div class="reviews__form">
+                    <h2 class="reviews__form-title"></h2>
+                  </div>
+                </div>
+                <!--/reviews-->
+              </div>
+            </div>
+          </div>
+          <!--/tabs-product__box-content-->
+        </div>
+        <!--/tabs-product-->
+
+
+        <!--
+           <div class="rating__items">
+                          <input type="radio" class="rating__item" id="rating__5">
+                          <label for="rating__5" class="rating__label"></label>
+                          <input type="radio" class="rating__item" id="rating__4">
+                          <label for="rating__4" class="rating__label"></label>
+                          <input type="radio" class="rating__item" id="rating__3">
+                          <label for="rating__3" class="rating__label"></label>
+                          <input type="radio" class="rating__item" id="rating__2">
+                          <label for="rating__2" class="rating__label"></label>
+                          <input type="radio" class="rating__item" id="rating__1">
+                          <label for="rating__1" class="rating__label"></label>
+                        </div>
+         -->
+
+        <div class="product__accordion accordion-product">
+          <div class="accordion-product__item">
+            <button class="accordion-product__btn accordion-product__btn--1 btn-reset">
+            </button>
+            <div class="accordion-product__content accordion-product__content--1">
+            </div>
+          </div>
+          <!--/accordion-product__item"-->
+          <div class="accordion-product__item">
+            <button class="accordion-product__btn accordion-product__btn--2 btn-reset">
+            </button>
+            <div class="accordion-product__content accordion-product__content--2">
+            </div>
+          </div>
+          <!--/accordion-product__item"-->
+          <div class="accordion-product__item">
+            <button class="accordion-product__btn accordion-product__btn--3 btn-reset">
+            </button>
+            <div class="accordion-product__content accordion-product__content--3">
+            </div>
+          </div>
+          <!--/accordion-product__item"-->
+        </div>
+        <!--/accordion-product-->
+
+      </div>
+
     </div>
-    <!--/container-->
+  </div>
 </main>
 
 @@include('block/footer/footer.html')

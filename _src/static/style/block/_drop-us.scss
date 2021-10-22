@@ -20,7 +20,7 @@
   font-size: $fz-main;
   font-family: $ff-main;
   text-align: center;
-  color: #808080;
+  color: $c-secondary;
 
   & br {
     @media (max-width: $lg) {
@@ -47,7 +47,7 @@
   font-weight: 400;
   font-size: $fz-main;
   font-family: $ff-main;
-  color: #808080;
+  color: $c-secondary;
 }
 
 .drop-us__input {
