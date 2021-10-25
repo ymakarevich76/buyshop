@@ -1,0 +1,43 @@
+
+.filter__range {
+  position: relative;
+
+  padding: 0 10px;
+}
+
+.filter__range-btn {
+  min-width: 90px;
+  margin-bottom: 25px;
+}
+
+.filter__range-value {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.filter__range-value span {
+  display: inline-block;
+  margin-right: 10px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+
+
+  @media (max-width: $md) {
+    margin-right: 5px;
+  }
+}
+
+
+.filter__range-value-lower,
+.filter__range-value-upper {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+}

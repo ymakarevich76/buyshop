@@ -7,8 +7,9 @@
 
   border-bottom: 1px solid #eee;
 
-  @media (max-width: $md) {
+  @media (max-width: $sm) {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -22,8 +23,16 @@
   font-family: $ff-main;
   text-transform: uppercase;
 
+  @media (max-width: $sm) {
+    width: 100%;
+  }
+
   &:not(:last-child) {
     margin-right: 20px;
+
+    @media (max-width: $sm) {
+      margin-right: 0;
+    }
   }
 
   &:after {
@@ -55,5 +64,9 @@
     padding: 20px 14px;
 
     color: $c-main;
+
+    @media (max-width: $sm) {
+      padding: 20px 0;
+    }
   }
 }

@@ -58,3 +58,13 @@
   src: url(../font/OpenSans/OpenSans-Regular.woff2),
   url(../font/OpenSans/OpenSans-Regular.woff);
 }
+
+@font-face {
+  font-weight: 500;
+  font-family: OpenSans;
+  font-style: normal;
+
+  font-display: swap;
+  src: url(../font/OpenSans/OpenSans-Medium.woff2),
+  url(../font/OpenSans/OpenSans-Medium.woff);
+}

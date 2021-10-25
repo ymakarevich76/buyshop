@@ -5,9 +5,10 @@
 <main class="main">
   <!-- //////////////////////////////////////////////////////////  -->
   <div class="container">
-    @@include('block/breadcrumb.html')
+
 
     <div class="product">
+      @@include('block/breadcrumb.html')
       <div class="product__wrap-top">
         <div class="product__image">
           <div class="product__slider swiper">
@@ -77,6 +78,14 @@
 
         <div class="product__desc">
           <h1 class="product__title">Acer Predator Gaming Laptop</h1>
+          <div class="product__rating rating">
+            <img src="static/img/icon/star.svg" alt="star">
+            <img src="static/img/icon/star.svg" alt="star">
+            <img src="static/img/icon/star.svg" alt="star">
+            <img src="static/img/icon/star-empty.svg" alt="empty star">
+            <img src="static/img/icon/star-empty.svg" alt="empty star">
+          </div>
+          <p class="product__rating-count">(1 customer review)</p>
           <div class="product__cost-box">
             <p class="product__cost product__cost--old">$45.00</p>
             <p class="product__cost">$40.00</p>
@@ -151,22 +160,16 @@
       <div class="product__wrap-bottom">
         <div class="product__tabs tabs-product">
           <div class="tabs-product__box-btn">
-            <button class="tabs-product__btn tabs-product__btn--active btn-reset">
-              <span data-da=".accordion-product__btn--1,767, first" class="btn-text btn-text--1">Description</span>
-            </button>
-            <button class="tabs-product__btn btn-reset">
-              <span data-da=".accordion-product__btn--2,767, first" class="btn-text btn-text--2">Additional
-                information</span>
-            </button>
-            <button class="tabs-product__btn btn-reset">
-              <span data-da=".accordion-product__btn--3,767, first" class="btn-text btn-text--3">Reviews (1)</span>
-            </button>
+            <button class="tabs-product__btn tabs-product__btn--active btn-reset">Description</button>
+            <button class="tabs-product__btn btn-reset">Additional
+              information</button>
+            <button class="tabs-product__btn btn-reset">Reviews (1)</button>
           </div>
           <!--/tabs-product__box-btn-->
 
           <div class="tabs-product__box-content">
             <div class="tabs-product__content tabs-product__content--active">
-              <div data-da=".accordion-product__content--1,767, first" class="desc-text desc-text--1">
+              <div class="desc-text">
                 <span class="desc-text__name">Paragraph text</span>
                 <p class="desc-text__desc">
                   Nam tristique porta ligula, vel viverra sem eleifend nec. Nulla sed purus augue, eu euismod tellus.
@@ -202,7 +205,7 @@
               </div>
             </div>
             <div class="tabs-product__content">
-              <div data-da=".accordion-product__content--2,767, first" class="desc-text desc-text--2">
+              <div class="desc-text">
                 <div class="desc-text__table">
                   <div class="desc-text__table-row">
                     <p class="desc-text__table-name">Weight</p>
@@ -216,7 +219,7 @@
               </div>
             </div>
             <div class="tabs-product__content">
-              <div data-da=".accordion-product__content--3,767, first" class="desc-text desc-text--3">
+              <div class="desc-text">
                 <div class="desc-text__reviews reviews">
                   <p class="reviews__title">
                     <span class="reviews__title reviews__title--bold">
@@ -263,6 +266,36 @@
                       <label for="email" class="reviews__label form__label">Email *</label>
                       <input class="reviews__input form__input" type="text" id="#email" required>
                     </div>
+                    <div class="reviews__cookies">
+                      <input id="checkbox-cookies" name="checkbox" type="checkbox" value="yes"
+                        class="reviews__checkbox-input">
+                      <label for="checkbox-cookies" class="reviews__checkbox-text">Save my name, email, and website in
+                        this browser for the
+                        next time I comment.</label>
+                    </div>
+                    <div class="reviews__rating-form">
+                      <p class="reviews__rating-text">YOUR RATING</p>
+                      <div class="rating-dynamic">
+                        <div class="rating-dynamic__items">
+                          <input type="radio" class="rating-dynamic__item" id="rating__5">
+                          <label for="rating__5" class="rating-dynamic__label"></label>
+                          <input type="radio" class="rating-dynamic__item" id="rating__4">
+                          <label for="rating__4" class="rating-dynamic__label"></label>
+                          <input type="radio" class="rating-dynamic__item" id="rating__3">
+                          <label for="rating__3" class="rating-dynamic__label"></label>
+                          <input type="radio" class="rating-dynamic__item" id="rating__2">
+                          <label for="rating__2" class="rating-dynamic__label"></label>
+                          <input type="radio" class="rating-dynamic__item" id="rating__1">
+                          <label for="rating__1" class="rating-dynamic__label"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviews__textarea-box">
+                      <label for="comment">Your review *</label>
+                      <textarea name="comment" id="comment" cols="48" rows="8"
+                        class="reviews__textarea form__input"></textarea>
+                    </div>
+                    <button type="submit" class="reviews__btn btn-1 btn-reset">Submit</button>
                   </form>
                 </div>
                 <!--/reviews-->
@@ -273,51 +306,669 @@
         </div>
         <!--/tabs-product-->
 
-
-        <!--
-           <div class="rating__items">
-                          <input type="radio" class="rating__item" id="rating__5">
-                          <label for="rating__5" class="rating__label"></label>
-                          <input type="radio" class="rating__item" id="rating__4">
-                          <label for="rating__4" class="rating__label"></label>
-                          <input type="radio" class="rating__item" id="rating__3">
-                          <label for="rating__3" class="rating__label"></label>
-                          <input type="radio" class="rating__item" id="rating__2">
-                          <label for="rating__2" class="rating__label"></label>
-                          <input type="radio" class="rating__item" id="rating__1">
-                          <label for="rating__1" class="rating__label"></label>
-                        </div>
-         -->
-
-        <div class="product__accordion accordion-product">
+        <!-- <div class="product__accordion accordion-product">
           <div class="accordion-product__item">
-            <button class="accordion-product__btn accordion-product__btn--1 btn-reset">
+            <button class="accordion-product__btn  accordion-product__btn--active accordion-product__btn--1 btn-reset">
             </button>
             <div class="accordion-product__content accordion-product__content--1">
             </div>
           </div>
-          <!--/accordion-product__item"-->
           <div class="accordion-product__item">
             <button class="accordion-product__btn accordion-product__btn--2 btn-reset">
             </button>
             <div class="accordion-product__content accordion-product__content--2">
             </div>
           </div>
-          <!--/accordion-product__item"-->
           <div class="accordion-product__item">
             <button class="accordion-product__btn accordion-product__btn--3 btn-reset">
             </button>
             <div class="accordion-product__content accordion-product__content--3">
             </div>
           </div>
-          <!--/accordion-product__item"-->
-        </div>
+        </div> -->
         <!--/accordion-product-->
 
-      </div>
+        <div class="product__liked like-product">
+          <h2 class="like-product__title title">You may also like…</h2>
+          <div class="like-product__slider swiper">
+            <div class="like-product__slider-wrapper swiper-wrapper">
+              <div class="like-product__slider-slide swiper-slide">
+                <div class="like-product__card card">
+                  <div class="card__wrap-img">
+                    <img src="static/img/card/1.jpg" alt="Microsoft Surface Go Magnetic Tablet Keyboard">
+                  </div>
+                  <div class="card__hover">
+                    <div class="card__hover-wrap-img">
+                      <img src="static/img/card/1-1.jpg" alt="Microsoft Surface Go Magnetic Tablet Keyboard">
+                    </div>
+                    <div class="card__links">
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#compare"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__rating rating">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                    </div>
+                    <p class="card__title">Microsoft Surface Go Magnetic Tablet Keyboard</p>
+                    <p class="card__cost">$111.00</p>
+                  </div>
+                </div>
+              </div>
+              <!--/slide-->
 
-    </div>
-  </div>
+              <div class="like-product__slider-slide swiper-slide">
+                <div class="like-product__card card">
+                  <div class="card__wrap-img">
+                    <img src="static/img/card/2.jpg" alt="Ambrane Power Bank (PP-20)">
+                  </div>
+                  <div class="card__hover">
+                    <div class="card__hover-wrap-img">
+                      <img src="static/img/card/2-1.jpg" alt="Ambrane Power Bank (PP-20)">
+                    </div>
+                    <div class="card__links">
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#compare"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__rating rating">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                    </div>
+                    <p class="card__title">Ambrane Power Bank (PP-20)</p>
+                    <p class="card__cost">$85.00</p>
+                  </div>
+                </div>
+              </div>
+              <!--/slide-->
+
+              <div class="like-product__slider-slide swiper-slide">
+                <div class="like-product__card card">
+                  <span class="card__sale">-21%</span>
+                  <div class="card__wrap-img">
+                    <img src="static/img/card/3.jpg" alt="Marq Home Theatre">
+                  </div>
+                  <div class="card__hover">
+                    <div class="card__hover-wrap-img">
+                      <img src="static/img/card/3-1.jpg" alt="Marq Home Theatre">
+                    </div>
+                    <div class="card__links">
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#compare"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__rating rating">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                    </div>
+                    <p class="card__title">Marq Home Theatre</p>
+                    <div class="card__cost-wrap">
+                      <p class="card__cost card__cost--old">$115.00</p>
+                      <p class="card__cost">$91.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/slide-->
+
+              <div class="like-product__slider-slide swiper-slide">
+                <div class="like-product__card card">
+                  <span class="card__sale">-11%</span>
+                  <div class="card__wrap-img">
+                    <img src="static/img/card/4.jpg" alt="Zebronics Bluetooth Home Theatre">
+                  </div>
+                  <div class="card__hover">
+                    <div class="card__hover-wrap-img">
+                      <img src="static/img/card/4-1.jpg" alt="Zebronics Bluetooth Home Theatre">
+                    </div>
+                    <div class="card__links">
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#compare"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__rating rating">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                    </div>
+                    <p class="card__title">Zebronics Bluetooth Home Theatre</p>
+                    <div class="card__cost-wrap">
+                      <p class="card__cost card__cost--old">$99.00</p>
+                      <p class="card__cost">$88.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/slide-->
+
+              <div class="like-product__slider-slide swiper-slide">
+                <div class="like-product__card card">
+                  <div class="card__wrap-img">
+                    <img src="static/img/card/2.jpg" alt="Ambrane Power Bank (PP-20)">
+                  </div>
+                  <div class="card__hover">
+                    <div class="card__hover-wrap-img">
+                      <img src="static/img/card/2-1.jpg" alt="Ambrane Power Bank (PP-20)">
+                    </div>
+                    <div class="card__links">
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#compare"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__rating rating">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                    </div>
+                    <p class="card__title">Ambrane Power Bank (PP-20)</p>
+                    <p class="card__cost">$85.00</p>
+                  </div>
+                </div>
+              </div>
+              <!--/slide-->
+
+              <div class="like-product__slider-slide swiper-slide">
+                <div class="like-product__card card">
+                  <span class="card__sale">-21%</span>
+                  <div class="card__wrap-img">
+                    <img src="static/img/card/3.jpg" alt="Marq Home Theatre">
+                  </div>
+                  <div class="card__hover">
+                    <div class="card__hover-wrap-img">
+                      <img src="static/img/card/3-1.jpg" alt="Marq Home Theatre">
+                    </div>
+                    <div class="card__links">
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#compare"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__rating rating">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                    </div>
+                    <p class="card__title">Marq Home Theatre</p>
+                    <div class="card__cost-wrap">
+                      <p class="card__cost card__cost--old">$115.00</p>
+                      <p class="card__cost">$91.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/slide-->
+            </div>
+            <!--/swiper-wrapper-->
+          </div>
+          <!--/slider-->
+          <div class="like-product__box-btn btn-box">
+            <div class="like-product__btn-prev btn-prev">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+              </svg>
+            </div>
+            <div class="like-product__btn-next btn-next">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- /like-product__box-btn -->
+        </div>
+        <!--/like-product-->
+
+        <div class="product__related related-product">
+          <h2 class="related-product__title title">Related products</h2>
+          <div class="related-product__slider swiper">
+            <div class="related-product__slider-wrapper swiper-wrapper">
+              <div class="related-product__slider-slide swiper-slide">
+                <div class="related-product__card card">
+                  <div class="card__wrap-img">
+                    <img src="static/img/card/5.jpg" alt="Apple MacBook Air Core">
+                  </div>
+                  <div class="card__hover">
+                    <div class="card__hover-wrap-img">
+                      <img src="static/img/card/5-1.jpg" alt="Apple MacBook Air Core">
+                    </div>
+                    <div class="card__links">
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#compare"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__rating rating">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                    </div>
+                    <p class="card__title">Apple MacBook Air Core</p>
+                    <div class="card__cost-wrap">
+                      <p class="card__cost card__cost--old">$88.00</p>
+                      <p class="card__cost">$82.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/slide-->
+
+              <div class="related-product__slider-slide swiper-slide">
+                <div class="related-product__card card">
+                  <span class="card__sale">-11%</span>
+                  <div class="card__wrap-img">
+                    <img src="static/img/card/6.jpg" alt="Acer Predator Gaming Laptop">
+                  </div>
+                  <div class="card__hover">
+                    <div class="card__hover-wrap-img">
+                      <img src="static/img/card/6-1.jpg" alt="Acer Predator Gaming Laptop">
+                    </div>
+                    <div class="card__links">
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#compare"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__rating rating">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                    </div>
+                    <p class="card__title">Acer Predator Gaming Laptop</p>
+                    <div class="card__cost-wrap">
+                      <p class="card__cost card__cost--old">$45.00</p>
+                      <p class="card__cost">$40.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="related-product__slider-slide swiper-slide">
+                <div class="related-product__card card">
+                  <span class="card__sale">-9%</span>
+                  <div class="card__wrap-img">
+                    <img src="static/img/card/7.jpg" alt="Date Unique New Analog Watch – For Men">
+                  </div>
+                  <div class="card__hover">
+                    <div class="card__hover-wrap-img">
+                      <img src="static/img/card/7-1.jpg" alt="Date Unique New Analog Watch – For Men">
+                    </div>
+                    <div class="card__links">
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#compare"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__rating rating">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                    </div>
+                    <p class="card__title">Date Unique New Analog Watch – For Men</p>
+                    <div class="card__cost-wrap">
+                      <p class="card__cost card__cost--old">$79.00</p>
+                      <p class="card__cost">$72.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="related-product__slider-slide swiper-slide">
+                <div class="related-product__card card">
+                  <span class="card__sale">-6%</span>
+                  <div class="card__wrap-img">
+                    <img src="static/img/card/8.jpg" alt="Sony Alpha IN5 Mirrorless Camera">
+                  </div>
+                  <div class="card__hover">
+                    <div class="card__hover-wrap-img">
+                      <img src="static/img/card/8-1.jpg" alt="Sony Alpha IN5 Mirrorless Camera">
+                    </div>
+                    <div class="card__links">
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#compare"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__rating rating">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                    </div>
+                    <p class="card__title">Sony Alpha IN5 Mirrorless Camera</p>
+                    <div class="card__cost-wrap">
+                      <p class="card__cost card__cost--old">$105.00</p>
+                      <p class="card__cost">$99.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="related-product__slider-slide swiper-slide">
+                <div class="related-product__card card">
+                  <span class="card__sale">-9%</span>
+                  <div class="card__wrap-img">
+                    <img src="static/img/card/7.jpg" alt="Date Unique New Analog Watch – For Men">
+                  </div>
+                  <div class="card__hover">
+                    <div class="card__hover-wrap-img">
+                      <img src="static/img/card/7-1.jpg" alt="Date Unique New Analog Watch – For Men">
+                    </div>
+                    <div class="card__links">
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#compare"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__rating rating">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                      <img src="static/img/icon/star-empty.svg" alt="Star">
+                    </div>
+                    <p class="card__title">Date Unique New Analog Watch – For Men</p>
+                    <div class="card__cost-wrap">
+                      <p class="card__cost card__cost--old">$79.00</p>
+                      <p class="card__cost">$72.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="related-product__slider-slide swiper-slide">
+                <div class="related-product__card card">
+                  <span class="card__sale">-6%</span>
+                  <div class="card__wrap-img">
+                    <img src="static/img/card/8.jpg" alt="Sony Alpha IN5 Mirrorless Camera">
+                  </div>
+                  <div class="card__hover">
+                    <div class="card__hover-wrap-img">
+                      <img src="static/img/card/8-1.jpg" alt="Sony Alpha IN5 Mirrorless Camera">
+                    </div>
+                    <div class="card__links">
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#compare"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="card__link">
+                        <svg aria-hidden="true">
+                          <use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__rating rating">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                      <img src="static/img/icon/star.svg" alt="Star">
+                    </div>
+                    <p class="card__title">Sony Alpha IN5 Mirrorless Camera</p>
+                    <div class="card__cost-wrap">
+                      <p class="card__cost card__cost--old">$105.00</p>
+                      <p class="card__cost">$99.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!--/swiper-wrapper-->
+          </div>
+          <!--/slider-->
+
+          <div class="related-product__box-btn btn-box">
+            <div class="related-product__btn-prev btn-prev">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+              </svg>
+            </div>
+            <div class="related-product__btn-next btn-next">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+              </svg>
+            </div>
+          </div><!-- /related-product__box-btn -->
+        </div>
+        <!--/related-product-->
+      </div>
 </main>
 
 @@include('block/footer/footer.html')

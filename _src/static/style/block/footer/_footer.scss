@@ -8,6 +8,9 @@
   position: relative;
 
   margin-bottom: 20px;
+  padding: 0;
+
+  border: none;
 
   @media (max-width: $md) {
     margin-bottom: 10px;

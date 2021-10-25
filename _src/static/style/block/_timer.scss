@@ -7,6 +7,16 @@
 
 .timer__card {
   margin-bottom: 10px;
+
+  border: none;
+}
+
+.timer__card .card__wrap-img {
+  height: 235px;
+}
+
+.timer__card .card__wrap-img img {
+  max-height: 100%;
 }
 
 .timer__countdown {
@@ -23,7 +33,7 @@
   flex-direction: column;
 
   &:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 10px;
 
     @media (max-width: $lg) {
       margin-right: 10px;

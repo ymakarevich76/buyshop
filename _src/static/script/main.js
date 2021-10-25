@@ -11,3 +11,5 @@
 @@include('block/__footer-tabs.js')
 @@include('block/__dynamicAdapt.js')
 @@include('block/__product-add-cart.js')
+@@include('block/__range.js')
+@@include('block/__toggle-btn-filter.js')

@@ -183,9 +183,84 @@ const productSlider = new Swiper('.product__slider', {
     swiper: {
       el: ".product__mini-slider",
       slidesPerView: 4,
-      // loop: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 3
+        },
+        426: {
+          slidesPerView: 4
+        },
+        576: {
+          slidesPerView: 5
+        },
+        768: {
+          slidesPerView: 3
+        },
+        992: {
+          slidesPerView: 3
+        },
+        1200: {
+          slidesPerView: 4
+        },
+      }
     }
   }
+});
 
+const likeProductSlider = new Swiper('.like-product__slider', {
+  navigation: {
+    nextEl: '.like-product__btn-next',
+    prevEl: '.like-product__btn-prev',
+  },
 
+  spaceBetween: 30,
+
+  loop: true,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    576: {
+      slidesPerView: 3
+    },
+    768: {
+      slidesPerView: 3
+    },
+    992: {
+      slidesPerView: 4
+    },
+    1200: {
+      slidesPerView: 4
+    },
+  }
+});
+
+const relatedProductSlider = new Swiper('.related-product__slider', {
+  navigation: {
+    nextEl: '.related-product__btn-next',
+    prevEl: '.related-product__btn-prev',
+  },
+
+  spaceBetween: 30,
+
+  loop: true,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    576: {
+      slidesPerView: 3
+    },
+    768: {
+      slidesPerView: 3
+    },
+    992: {
+      slidesPerView: 4
+    },
+    1200: {
+      slidesPerView: 4
+    },
+  }
 });

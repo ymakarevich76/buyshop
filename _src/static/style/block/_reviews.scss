@@ -45,6 +45,9 @@
 
 .reviews__rating {
   margin-right: 5px;
+
+  @media (max-width: $md) {
+  }
 }
 
 .reviews__meta {
@@ -94,4 +97,49 @@
 
 .reviews__label {
   color: $c-main;
+}
+
+.reviews__cookies {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reviews__checkbox-text {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.reviews__rating-form {
+  margin-bottom: 20px;
+}
+
+.reviews__rating-text {
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: $c-main;
+  text-transform: uppercase;
+
+  @media (max-width: $sm) {
+    margin-bottom: 10px;
+  }
+}
+
+.reviews__textarea-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.reviews__textarea {
+  background-color: #fff;
+}
+
+.reviews__btn {
+  max-width: 97px;
+
+  font-size: 12px;
 }

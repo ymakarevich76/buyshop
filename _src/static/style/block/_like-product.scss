@@ -1,0 +1,18 @@
+.like-product {
+  position: relative;
+}
+
+.like-product__title {
+  margin-bottom: 20px;
+}
+
+.like-product__card {
+}
+
+.like-product__card .card__cost {
+  font-weight: 600;
+
+  &--old {
+    font-weight: 300;
+  }
+}
