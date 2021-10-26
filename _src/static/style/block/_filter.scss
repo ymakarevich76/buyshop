@@ -9,5 +9,168 @@
 }
 
 .filter__title {
+  margin-bottom: 10px;
+
+  @media (max-width: $md) {
+    margin-bottom: 0;
+  }
+}
+
+
+.filter__range {
+  position: relative;
+
+  padding: 0 10px;
+
+  @media (max-width: $md) {
+    margin-top: 25px;
+  }
+}
+
+.filter__range-btn {
+  min-width: 90px;
   margin-bottom: 25px;
+}
+
+.filter__range-value {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.filter__range-value span {
+  display: inline-block;
+  margin-right: 10px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+
+
+  @media (max-width: $md) {
+    margin-right: 5px;
+  }
+}
+
+
+.filter__range-value-lower,
+.filter__range-value-upper {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+}
+
+.filter__box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 10px;
+
+  @media (max-width: $md) {
+    margin-top: 10px;
+  }
+}
+
+.filter__box-item {
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #e4e4e4;
+  }
+
+  &--active .filter__box-name {
+    position: relative;
+
+    padding-left: 25px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      display: block;
+      width: 16px;
+      height: 16px;
+
+      background: url("../img/icon/cross-black-button.svg") no-repeat;
+      background-size: 15px;
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+.filter__box-name {
+  font-weight: 400;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: #333;
+
+  transition: all .3s ease 0s;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+}
+.filter__box-count {
+  font-weight: 400;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: $c-secondary;
+}
+
+
+.filter__btn {
+  display: none;
+
+  @media (max-width: $md) {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+
+    display: block;
+    width: 100%;
+    height: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 20px;
+      height: 20px;
+
+      background: url("../img/icon/chevron-down-solid.svg") no-repeat center center;
+      background-size: 15px;
+
+      transition: .2s;
+    }
+
+    &--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.filter__btn + * {
+  @media (max-width: $md) {
+    display: none;
+  }
+}
+
+.filter__btn--active + * {
+  @media (max-width: $md) {
+    display: block;
+  }
 }

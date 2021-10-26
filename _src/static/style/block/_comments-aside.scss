@@ -1,0 +1,68 @@
+.comments-aside__title {
+  margin-bottom: 0;
+}
+
+.comments-aside__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments-aside__comment {
+  padding: 10px 15px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #e4e4e4;
+  }
+}
+
+.comments-aside__content {
+  position: relative;
+
+  margin-bottom: 0;
+  padding-left: 25px;
+
+  font-size: 13px;
+  line-height: 24px;
+  font-family: $ff-main;
+  color: #828282;
+  text-transform: capitalize;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 18px;
+    height: 24px;
+
+    background: url("../img/icon/user-circle-solid.svg") no-repeat;
+    background-size: 100%;
+  }
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+}
+
+.comments-aside__name {
+  margin-bottom: 0;
+
+  font-size: $fz-main;
+  line-height: 24px;
+  font-family: $ff-main;
+  color: $c-accent;
+  text-transform: capitalize;
+}
+
+.comments-aside__text {
+  display: inline-block;
+  margin-right: 3px;
+
+  font-weight: 500;
+  color: $c-accent;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}

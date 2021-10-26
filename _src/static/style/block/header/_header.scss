@@ -2,6 +2,14 @@
   &--product {
     background-color: rgba(250,250,250,1);
     border-bottom: 1px solid #ddd;
+
+    @media (max-width: $lg) {
+      border-bottom: none;
+    }
+  }
+
+  &--margin {
+    margin-bottom: 30px;
   }
 }
 

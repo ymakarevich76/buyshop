@@ -68,3 +68,13 @@ if (document.querySelector('.tabs-product__btn')) {
     })
   });
 }
+
+
+if (document.querySelector('.filter__btn')) {
+  const filterBtns = document.querySelectorAll('.filter__btn');
+  filterBtns.forEach((btn, index) => {
+    btn.addEventListener('click', (evt) => {
+      evt.currentTarget.classList.toggle('filter__btn--active');
+    })
+  });
+}

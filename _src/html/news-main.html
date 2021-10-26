@@ -1,0 +1,493 @@
+@@include('block/head.html')
+
+@@include('block/header/header.html', {"class": "header__category--none",
+"background": "header--product", "margin": "header--margin"})
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <div class="container">
+    <div class="main-box">
+      <aside class="main-box__sidebar" data-da=".main-box,767, last">
+        <form action="" method="get" class="search search--news">
+          <input type="text" placeholder="Search..." class="search__input">
+          <button type="submit" class="search__btn btn-reset"></button>
+        </form>
+
+        <div class="filter posts-aside">
+          <h3 class="filter__title posts-aside__title">Recent Posts</h3>
+          <button type="button" class="filter__btn btn-reset"></button>
+          <div class="posts-aside__wrap">
+            <div class="posts-aside__post">
+              <div class="posts-aside__img-wrap">
+                <img src="static/img/news/1.jpg" alt="Post">
+              </div>
+              <div class="posts-aside__content">
+                <a href="#" class="posts-aside__name">Nunc placerat augue vel porta venenatis</a>
+                <p class="posts-aside__date">May 13, 2021</p>
+              </div>
+            </div>
+            <!--/posts-aside__post-->
+            <div class="posts-aside__post">
+              <div class="posts-aside__img-wrap">
+                <img src="static/img/news/2.jpg" alt="Post">
+              </div>
+              <div class="posts-aside__content">
+                <a href="#" class="posts-aside__name">Nam quis odio id eros porta consequat</a>
+                <p class="posts-aside__date">April 20, 2021</p>
+              </div>
+            </div>
+            <!--/posts-aside__post-->
+            <div class="posts-aside__post">
+              <div class="posts-aside__img-wrap">
+                <img src="static/img/news/3.jpg" alt="Post">
+              </div>
+              <div class="posts-aside__content">
+                <a href="#" class="posts-aside__name">Vestibulum lobortis libero volutpat volutpat bibendum</a>
+                <p class="posts-aside__date">March 17, 2021</p>
+              </div>
+            </div>
+            <!--/posts-aside__post-->
+            <div class="posts-aside__post">
+              <div class="posts-aside__img-wrap">
+                <img src="static/img/news/4.jpg" alt="Post">
+              </div>
+              <div class="posts-aside__content">
+                <a href="#" class="posts-aside__name">Nullam in neque vitae arcu auctor feugiat</a>
+                <p class="posts-aside__date">February 14, 2021</p>
+              </div>
+            </div>
+            <!--/posts-aside__post-->
+            <div class="posts-aside__post">
+              <div class="posts-aside__img-wrap">
+                <img src="static/img/news/5.jpg" alt="Post">
+              </div>
+              <div class="posts-aside__content">
+                <a href="#" class="posts-aside__name">Maecenas suscipit massa quis magna dignissim ultricies</a>
+                <p class="posts-aside__date">February 13, 2021</p>
+              </div>
+            </div>
+            <!--/posts-aside__post-->
+          </div>
+        </div>
+
+        <div class="filter comments-aside">
+          <h3 class="filter__title comments-aside__title">Recent Comments</h3>
+          <button type="button" class="filter__btn btn-reset"></button>
+          <div class="comments-aside__wrap">
+            <div class="comments-aside__comment">
+              <a href="#" class="comments-aside__content">
+                <span class="comments-aside__name">jeremy</span>
+                <span class="comments-aside__text">on</span> Donec sollicitudin lectus ut efficitur
+                elementum</a>
+            </div>
+            <!--/comments-aside__comment-->
+            <div class="comments-aside__comment">
+              <a href="#" class="comments-aside__content">
+                <span class="comments-aside__name">paul</span>
+                <span class="comments-aside__text">on</span>Vestibulum lobortis libero volutpat volutpat bibendum</a>
+            </div>
+            <!--/comments-aside__comment-->
+            <div class="comments-aside__comment">
+              <a href="#" class="comments-aside__content">
+                <span class="comments-aside__name">nathan</span>
+                <span class="comments-aside__text">on</span> Nam quis odio id eros porta consequat</a>
+            </div>
+            <!--/comments-aside__comment-->
+            <div class="comments-aside__comment">
+              <a href="#" class="comments-aside__content">
+                <span class="comments-aside__name">aarron</span>
+                <span class="comments-aside__text">on</span>Nunc placerat augue vel porta venenatis</a>
+            </div>
+            <!--/comments-aside__comment-->
+            <div class="comments-aside__comment">
+              <a href="#" class="comments-aside__content">
+                <span class="comments-aside__name">admin</span>
+                <span class="comments-aside__text">on</span>Microsoft Surface Go Magnetic Tablet Keyboard</a>
+            </div>
+            <!--/comments-aside__comment-->
+          </div>
+        </div>
+
+        <div class="filter">
+          <h3 class="filter__title">Archives</h3>
+          <button type="button" class="filter__btn btn-reset"></button>
+          <ul class="filter__box list-reset">
+            <li class="filter__box-item">
+              <a href="#" class="filter__box-name">May 2021</a>
+              <span class="filter__box-count">(1)</span>
+            </li>
+            <li class="filter__box-item">
+              <a href="#" class="filter__box-name">April 2021</a>
+              <span class="filter__box-count">(1)</span>
+            </li>
+            <li class="filter__box-item">
+              <a href="#" class="filter__box-name">March 2021</a>
+              <span class="filter__box-count">(1)</span>
+            </li>
+            <li class="filter__box-item">
+              <a href="#" class="filter__box-name">February 2021</a>
+              <span class="filter__box-count">(8)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="filter">
+          <h3 class="filter__title">Categories</h3>
+          <button type="button" class="filter__btn btn-reset"></button>
+          <ul class="filter__box list-reset">
+            <li class="filter__box-item">
+              <a href="#" class="filter__box-name">Eum Fugiat</a>
+              <span class="filter__box-count">(1)</span>
+            </li>
+            <li class="filter__box-item">
+              <a href="#" class="filter__box-name">Lor separat</a>
+              <span class="filter__box-count">(2)</span>
+            </li>
+            <li class="filter__box-item">
+              <a href="#" class="filter__box-name">Neque Porro</a>
+              <span class="filter__box-count">(2)</span>
+            </li>
+            <li class="filter__box-item">
+              <a href="#" class="filter__box-name">Numque Nihil</a>
+              <span class="filter__box-count">(2)</span>
+            </li>
+            <li class="filter__box-item">
+              <a href="#" class="filter__box-name">Quia Non</a>
+              <span class="filter__box-count">(4)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="filter posts-aside">
+          <h3 class="filter__title posts-aside__title">Recent Post</h3>
+          <button type="button" class="filter__btn btn-reset"></button>
+          <div class="posts-aside__wrap">
+            <div class="posts-aside__post">
+              <div class="posts-aside__img-wrap">
+                <img src="static/img/news/1.jpg" alt="Post">
+              </div>
+              <div class="posts-aside__content">
+                <a href="#" class="posts-aside__name">Nunc placerat augue vel porta venenatis</a>
+                <p class="posts-aside__date">May 13, 2021</p>
+              </div>
+            </div>
+            <!--/posts-aside__post-->
+            <div class="posts-aside__post">
+              <div class="posts-aside__img-wrap">
+                <img src="static/img/news/2.jpg" alt="Post">
+              </div>
+              <div class="posts-aside__content">
+                <a href="#" class="posts-aside__name">Nam quis odio id eros porta consequat</a>
+                <p class="posts-aside__date">April 20, 2021</p>
+              </div>
+            </div>
+            <!--/posts-aside__post-->
+            <div class="posts-aside__post">
+              <div class="posts-aside__img-wrap">
+                <img src="static/img/news/3.jpg" alt="Post">
+              </div>
+              <div class="posts-aside__content">
+                <a href="#" class="posts-aside__name">Vestibulum lobortis libero volutpat volutpat bibendum</a>
+                <p class="posts-aside__date">March 17, 2021</p>
+              </div>
+            </div>
+            <!--/posts-aside__post-->
+          </div>
+        </div>
+      </aside>
+
+      <div class="main-box__content">
+        <div class="news-main">
+          <h1 class="news-main__title">Left Sidebar</h1>
+
+          <div class="news-main__wrap row">
+            <div class="news-main__new col">
+              <div class="news-main__wrap-img">
+                <img src="static/img/news/1-big.jpg" alt="News">
+
+                <div class="news-main__hover">
+                  <div class="news-main__hover-links">
+                    <a href="#" class="news-main__link">
+                      <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#plus-solid"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="news-main__link">
+                      <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#link-solid"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="news-main__content">
+                <p class="news-main__name">Nunc placerat augue vel porta venenatis</p>
+                <div class="news-main__box-data-author">
+                  <div class="news-main__data">
+                    <svg aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#calendar-alt-regular"></use>
+                    </svg>
+                    <span class="news-main__data-text">May 13, 2021</span>
+                  </div>
+                  <div class="news-main__author">
+                    <svg aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#edit-solid"></use>
+                    </svg>
+                    <a href="#" class="news-main__author-text">By admin</a>
+                  </div>
+                </div>
+                <p class="news-main__text"> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna</p>
+                <div class="news-main__wrap-btn">
+                  <a href="#" class="news-main__btn btn-reset">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="news-main__new col">
+              <div class="news-main__wrap-img">
+                <img src="static/img/news/4-big.jpg" alt="News">
+
+                <div class="news-main__hover">
+                  <div class="news-main__hover-links">
+                    <a href="#" class="news-main__link">
+                      <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#plus-solid"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="news-main__link">
+                      <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#link-solid"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="news-main__content">
+                <p class="news-main__name">Nullam in neque vitae arcu auctor feugiat</p>
+                <div class="news-main__box-data-author">
+                  <div class="news-main__data">
+                    <svg aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#calendar-alt-regular"></use>
+                    </svg>
+                    <span class="news-main__data-text">February 14, 2021</span>
+                  </div>
+                  <div class="news-main__author">
+                    <svg aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#edit-solid"></use>
+                    </svg>
+                    <a href="#" class="news-main__author-text">By admin</a>
+                  </div>
+                </div>
+                <p class="news-main__text"> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore.</p>
+                <div class="news-main__wrap-btn">
+                  <a href="#" class="news-main__btn btn-reset">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="news-main__new col">
+              <div class="news-main__wrap-img">
+                <img src="static/img/news/2-big.jpg" alt="News">
+
+                <div class="news-main__hover">
+                  <div class="news-main__hover-links">
+                    <a href="#" class="news-main__link">
+                      <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#plus-solid"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="news-main__link">
+                      <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#link-solid"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="news-main__content">
+                <p class="news-main__name">Nam quis odio id eros porta consequat</p>
+                <div class="news-main__box-data-author">
+                  <div class="news-main__data">
+                    <svg aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#calendar-alt-regular"></use>
+                    </svg>
+                    <span class="news-main__data-text">April 20, 2021</span>
+                  </div>
+                  <div class="news-main__author">
+                    <svg aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#edit-solid"></use>
+                    </svg>
+                    <a href="#" class="news-main__author-text">By admin</a>
+                  </div>
+                </div>
+                <p class="news-main__text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore.</p>
+                <div class="news-main__wrap-btn">
+                  <a href="#" class="news-main__btn btn-reset">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="news-main__new col">
+              <div class="news-main__wrap-img">
+                <img src="static/img/news/5-big.jpg" alt="News">
+
+                <div class="news-main__hover">
+                  <div class="news-main__hover-links">
+                    <a href="#" class="news-main__link">
+                      <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#plus-solid"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="news-main__link">
+                      <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#link-solid"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="news-main__content">
+                <p class="news-main__name">Maecenas suscipit massa quis magna dignissim ultricies</p>
+                <div class="news-main__box-data-author">
+                  <div class="news-main__data">
+                    <svg aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#calendar-alt-regular"></use>
+                    </svg>
+                    <span class="news-main__data-text">February 13, 2021</span>
+                  </div>
+                  <div class="news-main__author">
+                    <svg aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#edit-solid"></use>
+                    </svg>
+                    <a href="#" class="news-main__author-text">By admin</a>
+                  </div>
+                </div>
+                <p class="news-main__text"> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna</p>
+                <div class="news-main__wrap-btn">
+                  <a href="#" class="news-main__btn btn-reset">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="news-main__new col">
+              <div class="news-main__wrap-img">
+                <img src="static/img/news/3-big.jpg" alt="News">
+
+                <div class="news-main__hover">
+                  <div class="news-main__hover-links">
+                    <a href="#" class="news-main__link">
+                      <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#plus-solid"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="news-main__link">
+                      <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#link-solid"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="news-main__content">
+                <p class="news-main__name">Vestibulum lobortis libero volutpat volutpat bibendum</p>
+                <div class="news-main__box-data-author">
+                  <div class="news-main__data">
+                    <svg aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#calendar-alt-regular"></use>
+                    </svg>
+                    <span class="news-main__data-text">March 17, 2021</span>
+                  </div>
+                  <div class="news-main__author">
+                    <svg aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#edit-solid"></use>
+                    </svg>
+                    <a href="#" class="news-main__author-text">By admin</a>
+                  </div>
+                </div>
+                <p class="news-main__text"> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna</p>
+                <div class="news-main__wrap-btn">
+                  <a href="#" class="news-main__btn btn-reset">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="news-main__new col">
+              <div class="news-main__wrap-img">
+                <img src="static/img/news/6-big.jpg" alt="News">
+
+                <div class="news-main__hover">
+                  <div class="news-main__hover-links">
+                    <a href="#" class="news-main__link">
+                      <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#plus-solid"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="news-main__link">
+                      <svg aria-hidden="true">
+                        <use xlink:href="static/img/symbol/sprite.svg#link-solid"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="news-main__content">
+                <p class="news-main__name">Donec sollicitudin lectus ut efficitur elementum</p>
+                <div class="news-main__box-data-author">
+                  <div class="news-main__data">
+                    <svg aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#calendar-alt-regular"></use>
+                    </svg>
+                    <span class="news-main__data-text">February 13, 2021</span>
+                  </div>
+                  <div class="news-main__author">
+                    <svg aria-hidden="true">
+                      <use xlink:href="static/img/symbol/sprite.svg#edit-solid"></use>
+                    </svg>
+                    <a href="#" class="news-main__author-text">By admin</a>
+                  </div>
+                </div>
+                <p class="news-main__text"> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore.</p>
+                <div class="news-main__wrap-btn">
+                  <a href="#" class="news-main__btn btn-reset">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <a class="pagination__page pagination__page--current">
+            <span class="pagination__num">1</span>
+          </a>
+          <a class="pagination__page" href="#">
+            <span class="pagination__num">2</span>
+          </a>
+          <a class="pagination__page" href="#">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--/main-box-->
+  </div>
+  <!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')
