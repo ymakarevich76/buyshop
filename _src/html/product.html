@@ -1,14 +1,20 @@
 @@include('block/head.html')
 
 @@include('block/header/header.html', {"class": "header__category--none",
-"background": "header--product"})
+"background": "header--product", "margin": "header--margin"})
 <main class="main">
   <!-- //////////////////////////////////////////////////////////  -->
   <div class="container">
 
+    @@include('block/breadcrumb.html')
+
+    <div class="message">
+      <p class="message__text">
+        “Microsoft Surface Go Magnetic Tablet Keyboard” has been added to your cart.</p>
+      <a href="cart.html" class="message__btn btn-1">View cart</a>
+    </div>
 
     <div class="product">
-      @@include('block/breadcrumb.html')
       <div class="product__wrap-top">
         <div class="product__image">
           <div class="product__slider swiper">
@@ -113,7 +119,7 @@
 
               <input type="button" value="+" class="product__quantity-btn plus btn-reset">
             </div>
-            <button type="submit" class="product__btn-add-cart btn-1 btn-reset ">Add to cart</button>
+            <button type="button" class="product__btn-add-cart btn-1 btn-reset ">Add to cart</button>
           </form>
 
           <div class="product__box-like-compare">
@@ -121,13 +127,13 @@
               <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#heart"></use>
               </svg>
-              <a href="" class="product__box-link">Add to wishlist</a>
+              <a href="#" class="product__box-link">Add to wishlist</a>
             </div>
             <div class="product__box-compare">
               <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#clone"></use>
               </svg>
-              <a href="" class="product__box-link">Compare</a>
+              <a href="#" class="product__box-link">Compare</a>
             </div>
           </div>
 
@@ -138,20 +144,20 @@
             </div>
             <div class="product__meta-box">
               <span class="product__meta-name">Categories: </span>
-              <a href="" class="product__meta-link">Cryotronics,</a>
-              <a href="" class="product__meta-link">Hydraulic,</a>
-              <a href="" class="product__meta-link">induction,</a>
-              <a href="" class="product__meta-link">Integrated,</a>
-              <a href="" class="product__meta-link">lamp,</a>
-              <a href="" class="product__meta-link">mega,</a>
-              <a href="" class="product__meta-link">Night Lamps,</a>
-              <a href="" class="product__meta-link">Pro Electron,</a>
-              <a href="" class="product__meta-link">radio</a>
+              <a href="#" class="product__meta-link">Cryotronics,</a>
+              <a href="#" class="product__meta-link">Hydraulic,</a>
+              <a href="#" class="product__meta-link">induction,</a>
+              <a href="#" class="product__meta-link">Integrated,</a>
+              <a href="#" class="product__meta-link">lamp,</a>
+              <a href="#" class="product__meta-link">mega,</a>
+              <a href="#" class="product__meta-link">Night Lamps,</a>
+              <a href="#" class="product__meta-link">Pro Electron,</a>
+              <a href="#" class="product__meta-link">radio</a>
             </div>
             <div class="product__meta-box">
               <span class="product__meta-name">Tags: </span>
-              <a href="" class="product__meta-link">Bioelectronics,</a>
-              <a href="" class="product__meta-link">Integrated</a>
+              <a href="#" class="product__meta-link">Bioelectronics,</a>
+              <a href="#" class="product__meta-link">Integrated</a>
             </div>
           </div>
         </div>
@@ -267,8 +273,7 @@
                       <input class="reviews__input form__input" type="text" id="#email" required>
                     </div>
                     <div class="reviews__cookies">
-                      <input id="checkbox-cookies" name="checkbox" type="checkbox" value="yes"
-                        class="reviews__checkbox-input">
+                      <input id="checkbox" name="checkbox" type="checkbox" value="yes" class="reviews__checkbox-input">
                       <label for="checkbox-cookies" class="reviews__checkbox-text">Save my name, email, and website in
                         this browser for the
                         next time I comment.</label>
@@ -969,6 +974,8 @@
         </div>
         <!--/related-product-->
       </div>
+    </div>
+  </div>
 </main>
 
 @@include('block/footer/footer.html')

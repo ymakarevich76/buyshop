@@ -1,0 +1,137 @@
+.message {
+  display: none;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px;
+
+  background: #fff;
+  border: 1px solid #ededed;
+
+  @media (max-width: $sm) {
+    flex-wrap: wrap;
+  }
+
+  &--active {
+    display: flex;
+  }
+
+  &--cart-empty {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+
+    border: none;
+  }
+}
+
+.message__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.message__text {
+  position: relative;
+
+  margin-bottom: 0;
+  padding-left: 25px;
+
+  font-size: 14px;
+  font-family: $ff-main;
+  color: #5ca218;
+
+  @media (max-width: $sm) {
+    margin-bottom: 10px;
+  }
+
+  &::after {
+    content: "\2713";
+    position: absolute;
+    top: -15px;
+    left: 0;
+
+    display: block;
+    width: 22px;
+    height: 36px;
+
+    font-size: 28px;
+    font-family: sans-serif;
+    color: #5ca218;
+  }
+
+  &--cart-empty {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-left: 35px;
+
+    border: 1px solid #ededed;
+
+    &::after {
+      content: "i";
+      position: absolute;
+      top: -2px;
+      left: 15px;
+
+      display: block;
+      width: 22px;
+      height: 36px;
+
+      font-size: 28px;
+      font-family: Times,Georgia,serif;
+      color: #5ca218;
+      font-style: italic;
+    }
+  }
+}
+
+.message__wrap-btn {
+  width: 100%;
+}
+
+.message__btn {
+  min-width: 118px;
+
+  text-align: center;
+
+  @media (max-width: $sm) {
+    margin: 0 auto;
+  }
+
+  &--return {
+    position: relative;
+
+    display: inline-block;
+    min-width: 182px;
+    padding: 8px 23px 7px 48px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 25px;
+
+      width: 20px;
+      height: 20px;
+
+      background: url("../img/icon/reply-solid.svg") no-repeat;
+      background-size: 15px;
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+.message__btn-cancel {
+  display: inline-block;
+  margin-left: 5px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: $c-secondary;
+
+  &:hover {
+    color: $c-accent;
+  }
+}

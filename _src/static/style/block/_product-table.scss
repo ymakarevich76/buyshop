@@ -1,0 +1,271 @@
+.product-table {
+  width: 100%;
+
+  border-collapse: separate;
+
+  background: #fff;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+}
+
+.product-table__title {
+  font-weight: 600;
+  font-size: $fz-main;
+  line-height: 40px;
+  text-align: right;
+  color: $c-main;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid #ededed;
+
+  &--name {
+    text-align: left;
+  }
+}
+
+.product-table__col {
+  padding: 5px 15px;
+
+  border-bottom: 1px solid #ededed;
+
+  @media (max-width: $md) {
+    display: flex;
+
+    border: none;
+  }
+
+  &--close {
+    @media (max-width: $md) {
+      width: 100%;
+      padding: 10px;
+
+      border-bottom: 1px solid #ededed;
+    }
+  }
+
+  &--img {
+    min-width: 102px;
+
+    @media (max-width: $md) {
+      min-width: 30%;
+    }
+
+    @media (max-width: $sm) {
+      min-width: 100%;
+    }
+  }
+
+  &--name {
+    @media (max-width: $md) {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      padding: 0;
+    }
+
+    @media (max-width: $sm) {
+      min-width: 100%;
+    }
+  }
+
+  &--count {
+    @media (max-width: $md) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 10px;
+
+      border-bottom: 1px solid #ededed;
+    }
+  }
+
+  &--subtotal {
+    @media (max-width: $md) {
+      width: 100%;
+      padding: 10px;
+
+      border-bottom: 1px solid #ededed;
+    }
+  }
+}
+
+.product-table__row {
+  @media (max-width: $md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &--md {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+}
+
+.product-table__close-btn {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-secondary;
+
+  &:hover {
+    color: $c-accent;
+  }
+
+  &--md {
+    display: none;
+
+    @media (max-width: $md) {
+      display: inline-block;
+    }
+  }
+}
+
+.product-table__wrap-img img {
+  width: 100px;
+  height: 91px;
+}
+
+.product-table__name {
+  font-weight: 400;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: $c-secondary;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+}
+
+.product-table__price,
+.product-table__count {
+  margin-bottom: 0;
+
+  font-weight: 500;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  text-align: right;
+  color: $c-main;
+
+  @media (max-width: $md) {
+    text-align: left;
+  }
+}
+
+.product-table__amount {
+  @media (max-width: $md) {
+    display: flex;
+  }
+}
+
+.product-table__product,
+.product-table__amount {
+  @media (max-width: $md) {
+    padding: 10px;
+
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+.product-table__count {
+  margin-right: 5px;
+}
+
+.product-table__count-wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.product-table__count-num {
+  display: inline-block;
+  width: 60px;
+  padding: 8px 2px;
+
+  text-align: center;
+
+  border: 1px solid #ededed;
+}
+
+.product-table__action {
+  padding: 15px;
+
+  @media (max-width: $md) {
+    padding: 10px;
+
+    background-color: rgba(0, 0, 0, .02);
+  }
+}
+
+.product-table__coupon-box {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+}
+
+.product-table__coupon {
+  display: flex;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+
+.product-table__coupon-input {
+  width: 250px;
+  margin-right: 5px;
+  padding: 7px 8px;
+
+  font-size: $fz-main;
+  line-height: 20px;
+
+  background: #f7f7f7;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: #b8b3b3;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 10px;
+  }
+}
+
+.product-table__coupon-btn {
+  padding: 8px 15px;
+}
+
+.product-table__btn {
+  min-width: 122px;
+}
+
+.product-table__desc {
+  display: none;
+  @media (max-width: $md) {
+    display: inline-block;
+
+    font-weight: 700;
+    font-size: $fz-main;
+    font-family: $ff-main;
+    color: $c-main;
+  }
+}
+
+.product-table__subtotal {
+  @media (max-width: $md) {
+    display: flex;
+  }
+}

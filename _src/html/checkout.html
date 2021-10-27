@@ -1,0 +1,160 @@
+@@include('block/head.html')
+
+@@include('block/header/header.html', {"class": "header__category--none",
+"background": "header--product", "margin": "header--margin"})
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <div class="container">
+
+    <div class="checkout">
+      <h1>Checkout</h1>
+
+      <div class="checkout__info">
+        <p class="checkout__info-text checkout__info-text--mg">Have a coupon?
+          <button type="button" class="checkout__info-link btn-reset">Click here to enter your code</button>
+        </p>
+      </div>
+
+      <form class="checkout__coupon form">
+        <p class="checkout__coupon-text">If you have a coupon code, please apply it below.</p>
+        <div class="checkout__coupon-box">
+          <input type="text" class="checkout__coupon-input form__input" placeholder="Coupon code">
+          <button type="submit" class="checkout__coupon-btn btn-1 btn-reset">Apply coupon</button>
+        </div>
+      </form>
+
+      <div class="checkout__form-wrap row">
+
+        <div class="checkout__form form col">
+
+          <h2 class="checkout__title">Billing details</h2>
+
+          <div class="checkout__input-name-box">
+            <div class="checkout__box-name form__box-input">
+              <label for="name" class="checkout__label checkout__label form__label">First name <span>*</span> </label>
+              <input class="checkout__input form__input" type="text" id="#name" required>
+            </div>
+            <div class="checkout__box-name form__box-input">
+              <label for="surname" class="checkout__label checkout__label form__label">Last name <span>*</span> </label>
+              <input class="checkout__input form__input" type="text" id="#surname" required>
+            </div>
+          </div>
+
+          <div class="checkout__box-input form__box-input">
+            <label for="company" class="checkout__label checkout__label form__label">Company name (optional)</label>
+            <input class="checkout__input form__input" type="text" id="#company">
+          </div>
+
+          <div class="checkout__box-input form__box-input">
+            <label for="country" class="checkout__label checkout__label form__label">Country / Region <span>*</span>
+            </label>
+            <select name="country" id="country" class="checkout__select form__input" required>
+              <option value="United Arab Emirates">United Arab Emirates</option>
+              <option value="United Arab Emirates" selected>United Kingdom (UK)</option>
+              <option value="United Arab Emirates">United States (US)</option>
+            </select>
+          </div>
+
+          <div class="checkout__box-input form__box-input">
+            <label for="address" class="checkout__label checkout__label form__label">Street address
+              <span>*</span></label>
+            <input class="checkout__input checkout__input--address form__input" type="text" id="#address"
+              placeholder="House number and street name" required>
+            <input class="checkout__input form__input" type="text"
+              placeholder="Apartment, suite, unit, etc. (optional)">
+          </div>
+
+          <div class="checkout__box-input form__box-input">
+            <label for="city" class="checkout__label checkout__label form__label">Town / City <span>*</span></label>
+            <input class="checkout__input form__input" type="text" id="#city" required>
+          </div>
+
+          <div class="checkout__box-input form__box-input">
+            <label for="country" class="checkout__label checkout__label form__label">Country (optional)</label>
+            <input class="checkout__input form__input" type="text" id="#country">
+          </div>
+
+          <div class="checkout__box-input form__box-input">
+            <label for="postcode" class="checkout__label checkout__label form__label">Postcode <span>*</span></label>
+            <input class="checkout__input form__input" type="text" id="#postcode" required>
+          </div>
+
+          <div class="checkout__box-input form__box-input">
+            <label for="phone" class="checkout__label checkout__label form__label">Phone <span>*</span></label>
+            <input class="checkout__input form__input" type="text" id="#phone" required>
+          </div>
+
+          <div class="checkout__box-input form__box-input">
+            <label for="email" class="checkout__label checkout__label form__label">Email address <span>*</span></label>
+            <input class="checkout__input form__input" type="text" id="#email" required>
+          </div>
+        </div>
+
+        <div class="checkout__form form col">
+
+          <h2 class="checkout__title">Additional information</h2>
+
+          <div class="checkout__box-input form__box-input">
+            <label for="order" class="checkout__label checkout__label form__label">Order notes (optional)</label>
+            <textarea class="checkout__input form__input" id="#order" rows="7" cols="5"
+              placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="checkout__title">Your order</h2>
+      <div class="checkout__order">
+        <div class="checkout__order-row">
+          <p class="checkout__order-name">Product</p>
+          <p class="checkout__order-name">Subtotal</p>
+        </div>
+        <div class="checkout__order-row">
+          <p class="checkout__order-text">Acer Predator Gaming Laptop
+            <span>× 1</span>
+          </p>
+          <p class="checkout__order-cost">$40.00</p>
+        </div>
+        <div class="checkout__order-row">
+          <p class="checkout__order-text">Subtotal
+          </p>
+          <p class="checkout__order-cost">$40.00</p>
+        </div>
+        <div class="checkout__order-row">
+          <p class="checkout__order-text">Total
+          </p>
+          <p class="checkout__order-cost">$40.00</p>
+        </div>
+      </div>
+
+      <div class="checkout__wrap-info">
+        <div class="checkout__info">
+          <p class="checkout__info-text">Sorry, it seems that there are no available payment
+            methods for your state.
+            Please contact us if you require assistance or wish to make alternate arrangements.</p>
+        </div>
+      </div>
+
+      <div class="checkout__checkbox-wrap">
+        <p class="checkout__text">Your personal data will be used to process your order, support your experience
+          throughout this website, and for other purposes described in our
+          <a href="#">privacy policy</a>
+        </p>
+        <div class="checkout__checkbox">
+          <input id="checkbox-order" name="checkbox" type="checkbox" value="yes" class="checkout__checkbox-input">
+          <label for="checkbox-order" class="checkout__checkbox-text checkout__label">I have read and agree to the
+            website
+            <a href="#">terms and conditions <span>*</span></a>
+          </label>
+        </div>
+      </div>
+
+      <div class="checkout__order-wrap-btn">
+        <button type="submit" class="checkout__order-btn btn-1 btn-reset">Place order</button>
+      </div>
+    </div>
+  </div>
+  <!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

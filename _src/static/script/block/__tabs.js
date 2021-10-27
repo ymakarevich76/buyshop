@@ -78,3 +78,13 @@ if (document.querySelector('.filter__btn')) {
     })
   });
 }
+
+
+if (document.querySelector('.checkout__info-link')) {
+  const couponLink = document.querySelector('.checkout__info-link');
+  const couponForm = document.querySelector('.checkout__coupon')
+
+  couponLink.addEventListener('click', (evt) => {
+    couponForm.classList.toggle('checkout__coupon--active')
+  });
+}

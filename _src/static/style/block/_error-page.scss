@@ -1,0 +1,38 @@
+.error-page {
+  position: relative;
+
+  &::before {
+    content: "404";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+
+    font-weight: 700;
+    font-size: 400px;
+    line-height: 240px;
+    color: #f4f4f4;
+
+    transform: translateX(-50%);
+  }
+}
+
+.error-page__block {
+  margin-top: 30px;
+  padding: 100px 0 130px;
+
+  text-align: center;
+}
+
+.error-page__title {
+  margin-bottom: 10px;
+}
+
+.error-page__text {
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: $c-secondary;
+}

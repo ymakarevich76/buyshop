@@ -1,0 +1,171 @@
+@@include('block/head.html')
+
+@@include('block/header/header.html', {"class": "header__category--none",
+"background": "header--product", "margin": "header--margin"})
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <div class="container">
+
+    <div class="cart">
+      <h1 class="cart__title">Cart</h1>
+
+      <div class="cart__message message">
+        <p class="message__text">
+          “Microsoft Surface Go Magnetic Tablet Keyboard” removed.</p>
+        <button type="button" class="message__btn-cancel btn-reset" data-da=".message__text,576, last">Undo?</button>
+      </div>
+
+      <div class="cart__message message message--cart-empty">
+        <p class="message__text message__text--cart-empty">
+          Your cart is currently empty.</p>
+        <div class="message__wrap-btn">
+          <a href="shop.html" class="message__btn message__btn--return btn-1">Return to shop</a>
+        </div>
+      </div>
+
+
+      <div class="cart__wrap">
+
+        <form class="cart__form" action="" method="post">
+
+          <table class="cart__table product-table" cellspacing="0">
+            <thead>
+              <tr class="product-table__row product-table__row--md">
+                <th class="product-table__title product-table__col">
+                </th>
+                <th class="product-table__title product-table__col"></th>
+                <th class="product-table__title product-table__title--name product-table__col">Product</th>
+                <th class="product-table__title product-table__col">Price</th>
+                <th class="product-table__title product-table__col">Quantity</th>
+                <th class="product-table__title product-table__col">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="product-table__row">
+                <td class="product-table__col product-table__col--close">
+                  <button type="button" class="product-table__close-btn btn-reset">×</button>
+                </td>
+
+                <td class="product-table__col product-table__col--img">
+                  <a href="#" class="product-table__wrap-img">
+                    <img src="static/img/card/1.jpg" alt="">
+                  </a>
+                </td>
+
+                <td class="product-table__col product-table__col--name">
+                  <div class="product-table__product">
+                    <span class="product-table__desc">Product:</span>
+                    <a href="#" class="product-table__name">Microsoft Surface Go Magnetic Tablet Keyboard</a>
+                  </div>
+                </td>
+
+                <td class="product-table__col">
+                  <div class="product-table__amount" data-da=".product-table__col--name,767, last">
+                    <span class="product-table__desc">Price:</span>
+                    <p class="product-table__price">$111.00</p>
+                  </div>
+                </td>
+
+                <td class="product-table__col product-table__col--count">
+                  <span class="product-table__desc">Quantity:</span>
+                  <div class="product-table__count-wrap">
+                    <p class="product-table__count">Qty: </p>
+                    <span class="product-table__count-num">1</span>
+                  </div>
+                </td>
+
+                <td class="product-table__col product-table__col--subtotal">
+                  <div class="product-table__subtotal">
+                    <span class="product-table__desc">Subtotal:</span>
+                    <p class="product-table__price">$111.00</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="product-table__row">
+                <td class="product-table__col product-table__col--close">
+                  <button type="button" class="product-table__close-btn btn-reset">×</button>
+                </td>
+
+                <td class="product-table__col product-table__col--img">
+                  <a href="#" class="product-table__wrap-img">
+                    <img src="static/img/card/1.jpg" alt="">
+                  </a>
+                </td>
+
+                <td class="product-table__col product-table__col--name">
+                  <div class="product-table__product">
+                    <span class="product-table__desc">Product:</span>
+                    <a href="#" class="product-table__name">Microsoft Surface Go Magnetic Tablet Keyboard</a>
+                  </div>
+                </td>
+
+                <td class="product-table__col">
+                  <div class="product-table__amount" data-da=".product-table__col--name,767, last">
+                    <span class="product-table__desc">Price:</span>
+                    <p class="product-table__price">$111.00</p>
+                  </div>
+                </td>
+
+                <td class="product-table__col product-table__col--count">
+                  <span class="product-table__desc">Quantity:</span>
+                  <div class="product-table__count-wrap">
+                    <p class="product-table__count">Qty: </p>
+                    <span class="product-table__count-num">1</span>
+                  </div>
+                </td>
+
+                <td class="product-table__col product-table__col--subtotal">
+                  <div class="product-table__subtotal">
+                    <span class="product-table__desc">Subtotal:</span>
+                    <p class="product-table__price">$111.00</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="6" class="product-table__action">
+
+                  <div class="product-table__coupon-box">
+                    <div class="product-table__coupon">
+                      <input type="text" name="coupon" class="product-table__coupon-input" placeholder="Coupon code">
+                      <button type="submit" class="product-table__coupon-btn btn-1 btn-reset">Apply coupon</button>
+                    </div>
+
+                    <button type="submit" class="product-table__btn btn-1 btn-reset" disabled>
+                      Update cart</button>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+        </form>
+
+        <div class="cart__totals">
+          <div class="cart__totals-wrap">
+            <div class="cart__totals-row">
+              <h2 class="cart__totals-title">Cart totals</h2>
+            </div>
+            <div class="cart__totals-row">
+              <p class="cart__totals-name">Subtotal</p>
+              <p class="cart__totals-cost">$111.00</p>
+            </div>
+            <div class="cart__totals-row">
+              <p class="cart__totals-name">Total</p>
+              <p class="cart__totals-cost">$111.00</p>
+            </div>
+            <div class="cart__totals-row">
+              <a href="checkout.html" class="cart__totals-btn btn-1">Proceed to checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')
