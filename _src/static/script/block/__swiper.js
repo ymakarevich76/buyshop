@@ -171,40 +171,50 @@ const vendorsSlider = new Swiper('.vendors__slider', {
   }
 });
 
+
+let miniSlider = new Swiper('.product__mini-slider', {
+  navigation: {
+    nextEl: '.product__mini-btn-next',
+    prevEl: '.product__mini-btn-prev',
+  },
+  slidesPerView: 4,
+  breakpoints: {
+    320: {
+      slidesPerView: 3
+    },
+    426: {
+      slidesPerView: 4
+    },
+    576: {
+      slidesPerView: 5
+    },
+    768: {
+      slidesPerView: 3
+    },
+    992: {
+      slidesPerView: 3
+    },
+    1200: {
+      slidesPerView: 4
+    },
+  }
+});
+
+
 const productSlider = new Swiper('.product__slider', {
   slidesPerView: 1,
-
+  navigation: {
+    nextEl: '.product__mini-btn-next',
+    prevEl: '.product__mini-btn-prev',
+  },
   zoom: {
     maxRatio: 5,
     minRatio: 1,
   },
 
   thumbs: {
-    swiper: {
-      el: ".product__mini-slider",
-      slidesPerView: 4,
-      breakpoints: {
-        320: {
-          slidesPerView: 3
-        },
-        426: {
-          slidesPerView: 4
-        },
-        576: {
-          slidesPerView: 5
-        },
-        768: {
-          slidesPerView: 3
-        },
-        992: {
-          slidesPerView: 3
-        },
-        1200: {
-          slidesPerView: 4
-        },
-      }
-    }
-  }
+    swiper: miniSlider,
+  },
 });
 
 const likeProductSlider = new Swiper('.like-product__slider', {

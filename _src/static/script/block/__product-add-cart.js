@@ -57,12 +57,25 @@ if (document.querySelector('.product-table__close-btn')) {
   const btnCancel = document.querySelector('.message__btn-cancel');
   const cartEmpryMessage = document.querySelector('.message--cart-empty');
 
-  btnsDeleteProduct.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
+  const cartWrap = document.querySelector('.cart__wrap');
+
+  const checkProductCart = () => {
+    if (document.querySelectorAll('.product-row').length == 0) {
+      console.log(111)
       cartMessage.classList.add('message--active');
       cartEmpryMessage.classList.add('message--active');
+      cartWrap.classList.add('cart__wrap--none');
+    }
+  }
+
+  btnsDeleteProduct.forEach((btn, index) => {
+    btn.addEventListener('click', (evt) => {
+      evt.currentTarget.closest('.product-table__row').remove();
+      checkProductCart();
     });
   })
+
+
 
   btnCancel.addEventListener('click', () => {
     cartMessage.classList.remove('message--active');

@@ -46,6 +46,44 @@
   }
 }
 
+.product__mini-slider-wrap {
+  position: relative;
+
+  &:hover .product__mini-box-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.product__mini-btn-prev,
+.product__mini-btn-next {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+
+  transform: translate(0, -50%);
+  visibility: hidden;
+  opacity: 0;
+
+  transition: .3s;
+
+  .product__mini-slider-wrap:hover & {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.product__mini-btn-prev {
+  right: auto;
+  left: 0;
+}
+
+.product__mini-btn-next {
+  right: 0;
+  left: auto;
+}
+
+
 .product__title {
   margin-bottom: 18px;
   padding-bottom: 18px;
