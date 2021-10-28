@@ -13,3 +13,5 @@
 @@include('block/__product-add-cart.js')
 @@include('block/__range.js')
 @@include('block/__toggle-btn-filter.js')
+@@include('block/__header-cart.js')
+@@include('block/__validation.js')

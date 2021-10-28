@@ -1,7 +1,7 @@
 .account-menu {
   position: absolute;
   top: 60px;
-  right: 135px;
+  right: 120px;
   z-index: 10;
 
   width: 200px;
@@ -15,11 +15,8 @@
   box-shadow: 2px 2px 11px rgba(0, 0, 0, .1);
 
   @media (max-width: $xl) {
+    top: 45px;
     right: 60px;
-  }
-
-  @media (max-width: $md) {
-    top: 35px;
   }
 }
 

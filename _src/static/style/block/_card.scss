@@ -175,10 +175,22 @@
     fill: #fff;
   }
 
+  &--active .card__cart-svg {
+    display: none;
+  }
+
+  &--active .card__check-svg {
+    display: block;
+  }
+
   @media (max-width: $md) {
     width: 30px;
     height: 30px;
   }
+}
+
+.card__check-svg {
+  display: none;
 }
 
 .card__links-hover svg,

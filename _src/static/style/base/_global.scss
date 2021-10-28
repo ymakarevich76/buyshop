@@ -9,6 +9,10 @@ body {
   font-family: $ff-main;
   color: $c-main;
   letter-spacing: .5px;
+
+  &.fixed {
+    overflow: hidden;
+  }
 }
 
 .main {
