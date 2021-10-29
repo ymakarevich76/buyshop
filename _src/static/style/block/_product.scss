@@ -156,6 +156,33 @@
   border-bottom: 1px solid #eee;
 }
 
+.product__wrap-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product__attr {
+  margin: 10px 0;
+}
+
+.product__attr-item {
+  width: 75%;
+  padding: 6px;
+
+  background-color: #fff;
+}
+
+.product__label {
+  margin-bottom: 0;
+
+  font-weight: 500;
+  font-size: 15px;
+  font-family: $ff-main;
+  color: $c-main;
+}
+
 .product__stock {
   margin-bottom: 8px;
 

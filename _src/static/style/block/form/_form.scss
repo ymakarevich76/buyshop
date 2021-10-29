@@ -13,7 +13,14 @@
   font-weight: 400;
   font-size: $fz-main;
   font-family: $ff-main;
-  color: $c-secondary;
+  color: $c-main;
+
+  & span {
+    font-weight: 700;
+    font-size: $fz-main;
+    font-family: $ff-main;
+    color: red;
+  }
 }
 
 .form__input {
@@ -34,4 +41,22 @@
   &::placeholder {
     color: #b8b3b3;
   }
+}
+
+.form__checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.form__checkbox-input {
+  margin-right: 10px;
+}
+
+.form__checkbox-text {
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: $c-main;
 }

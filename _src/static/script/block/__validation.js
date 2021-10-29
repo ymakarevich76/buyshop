@@ -1,7 +1,8 @@
 $.mask.definitions['9'] = true;
 $.mask.definitions['9'] = "[0-9]";
 
-$("#phone-checkout").mask("+7(999)999-99-99");
+$("#checkout-phone").mask("+7(999)999-99-99");
+$("#call-back-phone").mask("+7(999)999-99-99");
 
 $("#center_ok").click(function () {
   $(this).setCursorPosition(3);

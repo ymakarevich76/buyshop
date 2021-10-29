@@ -149,17 +149,6 @@
   }
 }
 
-.checkout__label {
-  color: $c-main;
-}
-
-.checkout__label span {
-  font-weight: 700;
-  font-size: $fz-main;
-  font-family: $ff-main;
-  color: red;
-}
-
 .checkout__select {
   font-size: 12px;
   line-height: 37px;
@@ -263,23 +252,10 @@
 }
 
 .checkout__checkbox {
-  display: flex;
-  align-items: center;
   margin-bottom: 30px;
 }
 
-.checkout__checkbox-input {
-  margin-right: 10px;
-}
-
 .checkout__checkbox-text {
-  margin-bottom: 0;
-
-  font-weight: 400;
-  font-size: $fz-main;
-  font-family: $ff-main;
-  color: $c-main;
-
   & a {
     color: $c-accent;
 

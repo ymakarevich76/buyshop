@@ -118,23 +118,41 @@
             commodo
             consequat.
           </p>
-          <p class="product__stock">
-            <span class="product__stock-value">10</span>
-            in stock
-          </p>
-          <form action="" class="product__form">
-            <div class="product__quantity">
-              <span class="product__quantity-text">Qty: </span>
-
-              <input type="button" value="-" class="product__quantity-btn minus btn-reset">
-
-              <input type="text" step="1" min="1" max="998" name="quantity" value="1" title="Qty"
-                class="product__quantity-value" size="4" pattern="[0-9]*" inputmode="numeric"
-                aria-labelledby="Acer Predator Gaming Laptop quantity" readonly>
-
-              <input type="button" value="+" class="product__quantity-btn plus btn-reset">
+          <form action="" class="form">
+            <div class="product__attr">
+              <div class="product__wrap-item">
+                <label for="color" class="product__label">Color</label>
+                <select id="color" name="product__color" class="product__attr-item form__input">
+                  <option value="">Choose an option</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+              <div class="product__wrap-item">
+                <label for="size" class="product__label">Size</label>
+                <select id="size" name="product__size" class="product__attr-item form__input">
+                  <option value="">Choose an option</option>
+                  <option value="blue">large</option>
+                </select>
+              </div>
             </div>
-            <button type="button" class="product__btn-add-cart btn-1 btn-reset ">Add to cart</button>
+            <p class="product__stock">
+              <span class="product__stock-value">10</span>
+              in stock
+            </p>
+            <div class="product__form">
+              <div class="product__quantity">
+                <span class="product__quantity-text">Qty: </span>
+
+                <input type="button" value="-" class="product__quantity-btn minus btn-reset">
+
+                <input type="text" step="1" min="1" max="998" name="quantity" value="1" title="Qty"
+                  class="product__quantity-value" size="4" pattern="[0-9]*" inputmode="numeric"
+                  aria-labelledby="Acer Predator Gaming Laptop quantity" readonly>
+
+                <input type="button" value="+" class="product__quantity-btn plus btn-reset">
+              </div>
+              <button type="button" class="product__btn-add-cart btn-1 btn-reset ">Add to cart</button>
+            </div>
           </form>
 
           <div class="product__box-like-compare">
@@ -281,11 +299,11 @@
 
                     <div class="reviews__box-input form__box-input">
                       <label for="name" class="reviews__label form__label">Name *</label>
-                      <input class="reviews__input form__input" type="text" id="#name" required>
+                      <input class="reviews__input form__input" type="text" id="name" required>
                     </div>
                     <div class="reviews__box-input form__box-input">
                       <label for="email" class="reviews__label form__label">Email *</label>
-                      <input class="reviews__input form__input" type="text" id="#email" required>
+                      <input class="reviews__input form__input" type="text" id="email" required>
                     </div>
                     <div class="reviews__cookies">
                       <input id="checkbox" name="checkbox" type="checkbox" value="yes" class="reviews__checkbox-input">

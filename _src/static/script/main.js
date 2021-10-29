@@ -15,3 +15,5 @@
 @@include('block/__toggle-btn-filter.js')
 @@include('block/__header-cart.js')
 @@include('block/__validation.js')
+@@include('block/__popup.js')
+@@include('block/__open-card.js')

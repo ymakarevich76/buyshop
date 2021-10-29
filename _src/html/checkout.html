@@ -32,25 +32,25 @@
 
             <div class="checkout__input-name-box">
               <div class="checkout__box-name form__box-input">
-                <label for="name" class="checkout__label checkout__label form__label">First name <span>*</span> </label>
-                <input class="checkout__input form__input" type="text" id="#name" required>
+                <label for="checkout-name" class="checkout__label form__label">First name <span>*</span> </label>
+                <input class="checkout__input form__input" type="text" id="checkout-name" required>
               </div>
               <div class="checkout__box-name form__box-input">
-                <label for="surname" class="checkout__label checkout__label form__label">Last name <span>*</span>
+                <label for="checkout-surname" class="checkout__label form__label">Last name <span>*</span>
                 </label>
-                <input class="checkout__input form__input" type="text" id="#surname" required>
+                <input class="checkout__input form__input" type="text" id="checkout-surname" required>
               </div>
             </div>
 
             <div class="checkout__box-input form__box-input">
-              <label for="company" class="checkout__label checkout__label form__label">Company name (optional)</label>
-              <input class="checkout__input form__input" type="text" id="#company">
+              <label for="company" class="checkout__label form__label">Company name (optional)</label>
+              <input class="checkout__input form__input" type="text" id="company">
             </div>
 
             <div class="checkout__box-input form__box-input">
-              <label for="country" class="checkout__label checkout__label form__label">Country / Region <span>*</span>
+              <label for="region" class="checkout__label form__label">Country / Region <span>*</span>
               </label>
-              <select name="country" id="country" class="checkout__select form__input" required>
+              <select name="region" id="region" class="checkout__select form__input" required>
                 <option value="United Arab Emirates">United Arab Emirates</option>
                 <option value="United Arab Emirates" selected>United Kingdom (UK)</option>
                 <option value="United Arab Emirates">United States (US)</option>
@@ -58,39 +58,39 @@
             </div>
 
             <div class="checkout__box-input form__box-input">
-              <label for="address" class="checkout__label checkout__label form__label">Street address
+              <label for="address" class="checkout__label form__label">Street address
                 <span>*</span></label>
-              <input class="checkout__input checkout__input--address form__input" type="text" id="#address"
+              <input class="checkout__input checkout__input--address form__input" type="text" id="address"
                 placeholder="House number and street name" required>
               <input class="checkout__input form__input" type="text"
                 placeholder="Apartment, suite, unit, etc. (optional)">
             </div>
 
             <div class="checkout__box-input form__box-input">
-              <label for="city" class="checkout__label checkout__label form__label">Town / City <span>*</span></label>
-              <input class="checkout__input form__input" type="text" id="#city" required>
+              <label for="city" class="checkout__label form__label">Town / City <span>*</span></label>
+              <input class="checkout__input form__input" type="text" id="city" required>
             </div>
 
             <div class="checkout__box-input form__box-input">
-              <label for="country" class="checkout__label checkout__label form__label">Country (optional)</label>
-              <input class="checkout__input form__input" type="text" id="#country">
+              <label for="country" class="checkout__label form__label">Country (optional)</label>
+              <input class="checkout__input form__input" type="text" id="country">
             </div>
 
             <div class="checkout__box-input form__box-input">
-              <label for="postcode" class="checkout__label checkout__label form__label">Postcode <span>*</span></label>
-              <input class="checkout__input form__input" type="text" id="#postcode" required>
+              <label for="postcode" class="checkout__label form__label">Postcode <span>*</span></label>
+              <input class="checkout__input form__input" type="text" id="postcode" required>
             </div>
 
             <div class="checkout__box-input form__box-input">
-              <label for="phone-checkout" class="checkout__label checkout__label form__label">Phone
+              <label for="checkout-phone" class="checkout__label form__label">Phone
                 <span>*</span></label>
-              <input type="tel" class="checkout__input form__input" id="phone-checkout" required>
+              <input type="tel" class="checkout__input form__input" id="checkout-phone" required>
             </div>
 
             <div class="checkout__box-input form__box-input">
-              <label for="email" class="checkout__label checkout__label form__label">Email address
+              <label for="email" class="checkout__label form__label">Email address
                 <span>*</span></label>
-              <input class="checkout__input form__input" type="email" id="#email" required>
+              <input class="checkout__input form__input" type="email" id="email" required>
             </div>
           </div>
 
@@ -99,8 +99,8 @@
             <h2 class="checkout__title">Additional information</h2>
 
             <div class="checkout__box-input form__box-input">
-              <label for="order" class="checkout__label checkout__label form__label">Order notes (optional)</label>
-              <textarea class="checkout__input form__input" id="#order" rows="7" cols="5"
+              <label for="order" class="checkout__label form__label">Order notes (optional)</label>
+              <textarea class="checkout__input form__input" id="order" rows="7" cols="5"
                 placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
             </div>
           </div>
@@ -143,9 +143,9 @@
             throughout this website, and for other purposes described in our
             <a href="#">privacy policy</a>
           </p>
-          <div class="checkout__checkbox">
-            <input id="checkbox-order" name="checkbox" type="checkbox" value="yes" class="checkout__checkbox-input">
-            <label for="checkbox-order" class="checkout__checkbox-text checkout__label">I have read and agree to the
+          <div class="checkout__checkbox form__checkbox">
+            <input id="checkbox-order" name="checkbox" type="checkbox" value="yes" class="form__checkbox-input">
+            <label for="checkbox-order" class="form__checkbox-text checkout__checkbox-text">I have read and agree to the
               website
               <a href="#">terms and conditions <span>*</span></a>
             </label>

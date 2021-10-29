@@ -1,0 +1,73 @@
+@@include('block/head.html')
+
+@@include('block/header/header.html', {"class": "header__category--none",
+"background": "header--product", "margin": "header--margin"})
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <div class="container">
+
+    <div class="account">
+      <h1 class="account__title">My Account</h1>
+
+      <div class="account__form-wrap row">
+        <form action="" class="account__form form col">
+
+          <h2 class="account__title">Login</h2>
+
+          <div class="account__box-name form__box-input">
+            <label for="name" class="account__label form__label">Username or email address
+              <span>*</span> </label>
+            <input class="account__input form__input" type="text" id="#name" required>
+          </div>
+          <div class="account__box-name form__box-input">
+            <label for="password" class="account__label form__label">Password <span>*</span>
+            </label>
+            <input class="account__input form__input" type="password" id="#password" required>
+          </div>
+          <div class="account__checkbox form__checkbox">
+            <input id="checkbox-remember" name="checkbox" type="checkbox" value="yes" class="account__checkbox-input">
+            <label for="checkbox-remember" class="form__checkbox-text">Remember me</label>
+          </div>
+
+          <div class="account__wrap-btn">
+            <button type="submit" class="account__btn btn-1 btn-reset">Log in</button>
+          </div>
+          <a href="lost-password.html" class="account__forgot-password">Lost your password?</a>
+        </form>
+
+        <form action="" class="account__form form col">
+
+          <h2 class="account__title">Register</h2>
+
+          <div class="account__box-name form__box-input">
+            <label for="username" class="account__label form__label">Username <span>*</span> </label>
+            <input class="account__input form__input" type="text" id="#username" required>
+          </div>
+          <div class="account__box-name form__box-input">
+            <label for="email-address" class="account__label form__label">Email address <span>*</span>
+            </label>
+            <input class="account__input form__input" type="email" id="#email-address" required>
+          </div>
+
+          <div class="account__box-name form__box-input">
+            <label for="pass" class="account__label form__label">Password <span>*</span>
+            </label>
+            <input class="account__input form__input" type="password" id="#pass" required>
+          </div>
+
+          <p class="account__text">Your personal data will be used to process your order, support your experience
+            throughout this website, and for other purposes described in our
+            <a href="#">privacy policy</a>
+          </p>
+
+          <div class="account__wrap-btn">
+            <button type="submit" class="account__btn account__btn--w btn-1 btn-reset">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

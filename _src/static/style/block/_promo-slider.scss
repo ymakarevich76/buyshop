@@ -1,4 +1,12 @@
 .promo-slider {
+  & .swiper-slide-duplicate-active .promo-slider__text-wrap {
+    animation-name: bounce;
+    animation-duration: 2s;
+  }
+  & .swiper-slide-active .promo-slider__text-wrap {
+    animation-name: bounce;
+    animation-duration: 2s;
+  }
 }
 
 .promo-slider__slide {

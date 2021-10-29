@@ -16,6 +16,15 @@
   }
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-250%);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .animate-fadeInDown {
   animation-name: fadeInDown;
   animation-duration: 1s;
