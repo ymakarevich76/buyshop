@@ -151,7 +151,7 @@ const cssBuild = () => {
   .pipe(sass())
   .pipe(gcmq())
   .pipe(autoprefixer(['last 15 versions']))
-  .pipe(cleancss())
+  // .pipe(cleancss())
   .pipe(rename({ suffix: '.min' }))
   .pipe(dest(path.dist.style));
 }
@@ -177,12 +177,12 @@ const js = () => {
   .pipe(dest(path.dist.script), { sourcemaps: true })
   .pipe(browserSync.stream());
 }
-  
+
 const jsBuild = () => {
   return src(path.src.script)
   .pipe(fileinclude())
   .pipe(babel({ presets: ['@babel/env'] }))
-  .pipe(uglify())
+  // .pipe(uglify())
   .pipe(rename({suffix: '.min'}))
   .pipe(dest(path.dist.script));
 }
