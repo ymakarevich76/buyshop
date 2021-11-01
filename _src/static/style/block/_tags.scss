@@ -37,4 +37,9 @@
   background: #f5f5f5;
   border: 1px solid #eee;
   border-radius: 5px;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
 }
